@@ -1,0 +1,23 @@
+.logo h1{
+    background-image: url('../images/dot-pr-logo.png');
+    background-size: contain;
+    height: 50px;
+    width: 100px;
+}
+
+
+.footer{
+    position: fixed;
+    bottom: 0px;
+    background: white;
+    width: 100%;
+    height: 50px;
+    z-index: 20;
+}
+
+.social_icons{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

@@ -1,8 +1,14 @@
-.logo h1{
-    background-image: url('../images/dot-pr-logo.png');
-    background-size: contain;
-    height: 50px;
-    width: 100px;
+.logo{
+    position: relative;
+
+    h1{
+
+        background-image: url('../images/dot-pr-logo.png');
+        background-size: contain;
+        height: 30px;
+        width: 30px;
+        display: block;
+    }
 }
 
 
@@ -16,8 +22,31 @@
 }
 
 .social_icons{
-    position: relative;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+
+    .social{
+        display: inline-block;
+        height: 25px;
+        width: 25px;
+        margin: 15px 2px;
+
+        &.twitter{
+            background: url("../images/twitter.png") no-repeat;
+            background-size: contain;
+        }
+
+        &.facebook{
+            background: url("../images/facebook.png") no-repeat;
+            background-size: contain;
+        }
+
+        &.instagram{
+            background: url("../images/instagram.png") no-repeat;
+            background-size: contain;
+        }
+
+        &.mail{
+            background: url("../images/mail.png") no-repeat;
+            background-size: contain;
+        }
+    }
 }

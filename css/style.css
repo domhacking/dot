@@ -5,34 +5,34 @@
 * http://www.energeticthemes.com/templates/kaam/index.html
 * DATE: 01/01/16
 
-1 - BASE 
-  - Basic elements 
-  - A) Spinner 
+1 - BASE
+  - Basic elements
+  - A) Spinner
 2 - Header
   - Brand logo
-  - Main Nav Menu 
-3 - Portfolio 
+  - Main Nav Menu
+3 - Portfolio
   - Single Portfolio
   - Work Filter
   - Portfolio col layouts
   - slider portfolio
 4 - Team
-5 - Testimonials 
-6 - Clients list box 
-7 - Service Box 
-8 - Overlay 
+5 - Testimonials
+6 - Clients list box
+7 - Service Box
+8 - Overlay
 9 - Blog - posts
   - Post Author
   - Comments Box
 10 - Contact Form
-11 - Plugins CSS 
+11 - Plugins CSS
 10 - Extra CSS
 
 ------------------------------------------------------------------*/
- 
+
 
 /*=================================================
-1 - BASE 
+1 - BASE
 =================================================*/
 
 body {
@@ -418,7 +418,7 @@ blockquote {
 
 
 /*=================================================
- A) Spinner 
+ A) Spinner
 =================================================*/
 
 .page_loading {
@@ -472,7 +472,7 @@ blockquote {
 
 
 /*=================================================
-2 - Header 
+2 - Header
 =================================================*/
 
 header {
@@ -732,7 +732,7 @@ header {
 
 
 /*=================================================
-3 -Portfolio 
+3 -Portfolio
 =================================================*/
 
 .single_work_header {
@@ -1249,10 +1249,10 @@ header {
 .masonry_gallery li {
   list-style: none;
   float: left;
-  padding:15px;  
- 
+  padding:15px;
+
   width: 30%;
-}  
+}
 .masonry_gallery li:nth-child(5n+1) {
   width: 67.45%;
 }
@@ -1340,7 +1340,7 @@ header {
 
 
 /*=================================================
-5 - Testimonials 
+5 - Testimonials
 =================================================*/
 
 .testimonials-container {
@@ -1463,7 +1463,7 @@ header {
 
 .clients-box li {
   list-style: none;
-  width: 25%;
+  width: 33%;
   float: left;
   position: relative;
 }
@@ -1501,13 +1501,13 @@ header {
   content: '';
 }
 
-.clients-box li:nth-child(4n):after,
-.clients-box li:nth-child(1):before,
-.clients-box li:nth-child(2):before,
-.clients-box li:nth-child(3):before,
-.clients-box li:nth-child(4):before {
+/*.clients-box li:nth-child(6n):after,*/
+/*.clients-box li:nth-child(1):before,*/
+/*.clients-box li:nth-child(2):before,*/
+/*.clients-box li:nth-child(3):before,*/
+/*{
   background-color: rgba(0, 0, 0, 0.00);
-}
+}*/
 
 .clients-box li {
   padding: 30px;
@@ -1524,7 +1524,7 @@ header {
 
 
 /*=================================================
-7 - Service Box 
+7 - Service Box
 =================================================*/
 
 .service_box {
@@ -1546,7 +1546,7 @@ header {
 
 
 /*=================================================
-8 - Overlay 
+8 - Overlay
 =================================================*/
 
 .overlay {
@@ -2010,11 +2010,11 @@ textarea {}
 
 
 /*=================================================
-   2 - Plugins CSS 
+   2 - Plugins CSS
   =================================================*/
 
 
-/* 
+/*
  *  Core Owl Carousel CSS File
  */
 
@@ -2140,7 +2140,7 @@ textarea {}
 }
 
 
-/* 
+/*
  *  Owl Carousel - Lazy Load Plugin
  */
 
@@ -2158,7 +2158,7 @@ textarea {}
 }
 
 
-/* 
+/*
  *  Owl Carousel - Video Plugin
  */
 
@@ -2830,7 +2830,7 @@ screen and (max-height: 300px) {
 }
 
 
-/* 
+/*
 Extra CSS */
 
 

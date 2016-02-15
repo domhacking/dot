@@ -32,3 +32,29 @@
   .social_icons .social.mail {
     background: url("../images/mail.png") no-repeat;
     background-size: contain; }
+
+.clients-box li {
+  min-height: 240px;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat; }
+  .clients-box li:hover {
+    opacity: 0.7; }
+
+.rotg {
+  background: url("/images/ROTG-logo.png");
+  background-color: green;
+  background-size: contain; }
+
+.joy {
+  background: url("/images/joy-logo.png"); }
+
+.secretSpa {
+  background: url("/images/privatespa12.jpg");
+  min-height: 240px; }
+  .secretSpa p {
+    font-size: 40px;
+    color: #858ca6;
+    letter-spacing: 2px;
+    font-family: Raleway,Gill Sans,Lato;
+    text-align: center; }

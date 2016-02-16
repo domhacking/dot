@@ -1490,24 +1490,24 @@ header {
   content: '';
 }
 
-.clients-box li:before {
+/*.clients-box li:before {
   position: absolute;
   right: 5%;
   top: 0;
   width: 90%;
   height: 1px;
   display: block;
-  background-color: rgba(0, 0, 0, 0.06);
+  background-color: rgba(0, 0, 0, 0.06)d
   content: '';
-}
+}*/
 
-/*.clients-box li:nth-child(6n):after,*/
+.clients-box li:nth-child(3n):after
 /*.clients-box li:nth-child(1):before,*/
 /*.clients-box li:nth-child(2):before,*/
 /*.clients-box li:nth-child(3):before,*/
-/*{
+{
   background-color: rgba(0, 0, 0, 0.00);
-}*/
+}
 
 .clients-box li {
   padding: 30px;

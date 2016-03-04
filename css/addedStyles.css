@@ -29,6 +29,28 @@
   min-height: 100%;
   background-color: #fff; }
 
+.img-bg {
+  height: auto; }
+  .img-bg img {
+    width: 100%; }
+
+.block-panel {
+  padding: 0; }
+  .block-panel .content-panel {
+    width: 90%;
+    padding: 40px;
+    display: block;
+    margin: 0 autol; }
+
+.recButton {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: 'Cardo', serif;
+  border: solid 1px #b7b7b7;
+  padding: 10px 40px;
+  margin-top: 20px;
+  display: inline-block; }
+
 .footer {
   position: fixed;
   bottom: 0px;
@@ -36,6 +58,27 @@
   width: 100%;
   height: 50px;
   z-index: 20; }
+
+.team {
+  display: inline-block;
+  padding: 20px 40px; }
+  .team .telephoneIcon {
+    background: url("/images/PHONE-01.png") no-repeat;
+    background-size: 75%;
+    background-position: center;
+    height: 35px;
+    width: 35px;
+    display: inline-block;
+    text-align: left; }
+  .team p {
+    display: inline-block;
+    text-align: left; }
+  .team .mailIcon {
+    background: url("/images/email-01.png") no-repeat;
+    background-size: 100%;
+    height: 35px;
+    width: 35px;
+    display: inline-block; }
 
 .social_icons .social {
   display: inline-block;

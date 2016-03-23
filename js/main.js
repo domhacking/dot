@@ -169,7 +169,7 @@
      var wow = new WOW({
        boxClass: 'wow', // animated element css class (default is wow)
        animateClass: 'animated', // animation css class (default is animated)
-       offset: 50, // distance to the element when triggering the animation (default is 0) 
+       offset: 50, // distance to the element when triggering the animation (default is 0)
        mobile: false
      });
      wow.init();
@@ -329,4 +329,23 @@
 
 
 
- })(jQuery)
+ })(jQuery);
+
+
+ (function(){
+
+  var parallax = document.querySelectorAll(".parallax"),
+      speed = 0.5;
+
+  window.onscroll = function(){
+    [].slice.call(parallax).forEach(function(el,i){
+
+      var windowYOffset = window.pageYOffset,
+          elBackgrounPos = "50% calc(50% + " + (windowYOffset * speed) + "px)";
+
+      el.style.backgroundPosition = elBackgrounPos;
+
+    });
+  };
+
+})();

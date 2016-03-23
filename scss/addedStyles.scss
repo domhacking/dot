@@ -1,10 +1,38 @@
+// HERO //
+
+p, ul{
+    // color: black;
+    font-variant: small-caps;
+}
+
+#page-wrap, #main-content, #guts{
+    min-height: 100%;
+    height: 100%;
+}
+
+.homepage{
+    min-height: 100%;
+    height: 100%;
+    position: relative;
+}
+
+div.module.parallax-1 {
+    //  display: table-cell;
+    //  vertical-align: middle;
+     height: 100%;
+     background: url('/images/dot-pr-logo.png') no-repeat;
+     background-position: center;
+}
+
+
+
+
 // HOMEPAGE //
 
 .logo{
     position: relative;
 
     h1{
-        // background-image: url('../images/dot-pr-logo.png');
         background-size: contain;
         height: 30px;
         width: 30px;
@@ -12,52 +40,28 @@
     }
 }
 
-.fixed-bg{
-	overflow: hidden; // added for pseudo-element
-  	position: relative;
-    height: 100%;
-
-	&::before {
-		content: ' ';
-		position: fixed; // instead of background-attachment
-     	width: 100%;
-     	height: 100%;
-     	top: 0;
-     	left: 0;
-     	background-color: white;
-	 	background: url('/images/dot-pr-logo.png') no-repeat center center;
-	   	background-size: auto 50%;
-	   	will-change: transform;
-	    background-attachment: scroll;
-	   	z-index: -1;
-	 }
-}
-
-.scrolling-bg{
-	position: relative;
-	min-height: 100%;
-    background-color: #fff;
-}
-
 .img-bg{
     height: auto;
 
     img{
         width: 100%;
+        border-radius: 50%;
     }
 }
 
 .block-panel{
-    padding: 0;
+    padding: 50px;
 
     .content-panel{
         width: 90%;
-        padding: 40px;
         display: block;
         margin: 0 autol
     }
 }
 
+.instaReel{
+    margin-top: 40px;
+}
 
 .recButton{
     font-size: 12px;
@@ -69,6 +73,54 @@
     display: inline-block;;
 }
 
+.team{
+    padding: 20px 40px 20px 100px;
+    text-align: left;
+
+    h3{
+        margin-bottom: 20px;
+    }
+
+    .telephoneRow{
+        // text-align: left;
+        // margin-top: 25px;
+    }
+
+    .telephoneIcon{
+        background: url('/images/PHONE-01.png') no-repeat;
+        background-size: 100%;
+        background-position:  center;
+        height: 15px;
+        width: 15px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+
+    .mailIcon{
+        background: url('/images/email-01.png') no-repeat;
+        background-size: 100%;
+        height: 15px;
+        width: 15px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    p{
+        display: inline-block;
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    &.address{
+        p{
+            display: block;
+            margin: 0;
+        }
+    }
+
+}
+
 .footer{
     position: fixed;
     bottom: 0px;
@@ -77,36 +129,6 @@
     height: 50px;
     z-index: 20;
 }
-.team{
-    display: inline-block;
-    padding: 20px 40px;
-
-    .telephoneIcon{
-        background: url('/images/PHONE-01.png') no-repeat;
-        background-size: 75%;
-        background-position:  center;
-        height: 35px;
-        width: 35px;
-        display: inline-block;
-        text-align: left;
-        
-    }
-
-    p{
-        display: inline-block;
-        text-align: left;
-
-    }
-
-    .mailIcon{
-        background: url('/images/email-01.png') no-repeat;
-        background-size: 100%;
-        height: 35px;
-        width: 35px;
-        display: inline-block
-    }
-}
-
 
 .social_icons{
 
@@ -139,6 +161,10 @@
 }
 
 
+// EVENTS
+
+
+
 // EVENTS AND PR PAGE //
 
 .clients-box{
@@ -160,33 +186,36 @@
     }
 }
 
+.clients-box-container{
+    background: #fff;
+}
+
 .rotg{
     padding-top: 0px !important;
-
 
     .bg-rotg{
         background: url("/images/ROTG-logo.png") no-repeat;
         background-position: center;
         height: 100%;
         width: 100%;
-        background-color: green;
+        background-color: #404040;
         background-size: contain;
         min-height: 240px;
     }
 }
 
 .joy{
-    background: url("/images/joy-logo.png");
+    background: url("/images/joy-logo-bw.png");
 
 }
 
 .secretSpa{
-    background: url('/images/privatespa12.jpg');
+    background: url('/images/privatespa12-bw.png');
     min-height: 240px;
 
     p{
         font-size: 40px;
-        color: #858ca6;
+        color: #404040;
         letter-spacing: 2px;
         font-family: Raleway,Gill Sans,Lato;
         text-align: center;
@@ -197,7 +226,75 @@
     background: url('/images/kold-logo.jpg');
 }
 
-// CLIENTS PAGE //
-.kold-bg{
-    background: url('/images/kold-1.jpg');
+
+
+// General
+
+.whiteheader{
+    position: fixed;
+    height: 50px;
+    z-index: 20;
+    background-color: white;
+    top: 0;
+    width: 100%;
+}
+
+.bg-grey{
+    background-color: #f1f1f1;
+}
+
+.headingDot{
+    background: black;
+    width: 150px;
+    border-radius: 50%;
+    height: 150px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 60px;
+}
+
+.headingDot--heading{
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    margin-top: 75px;
+    margin-left: 79px;
+    color: white;
+}
+
+
+
+// Menu
+
+.menu-nav li a:before, .menu-nav li a:after {
+    border-radius: 50%;
+    height: 8px;
+    width: 8px;
+    margin-top: -5px;
+}
+.menu-nav li a:before{
+    margin-left: 5px;
+}
+
+.menu-nav li a.current:before, .menu-nav li a.current:after, .menu-nav li a:hover:after, .menu-nav li a:hover:before {
+    background: black;
+    margin-left: 5px;
+}
+
+.close_menu i {
+
+    &:hover{
+        border-radius: 50%;
+        background-color: black;
+        color: white;
+
+    }
+}
+.ion-android-close:before {
+    &:hover{
+        width: 40px;
+    }
 }

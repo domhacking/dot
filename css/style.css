@@ -131,7 +131,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Cardo', serif;
+  font-family: Helvetica Neue, sans-serif;
 }
 
 a,
@@ -144,6 +144,11 @@ p a {
   -o-transition: all .15s linear;
   transition: all .15s linear;
 }
+
+/*p{
+    font-variant: small-caps;
+    font-weight: bold;
+}*/
 
 a:hover {
   color: #000;

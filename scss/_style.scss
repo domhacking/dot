@@ -454,7 +454,7 @@ blockquote {
   margin: -40px 0 0 -40px;
   width: 40px;
   height: 40px;
-  background-color: #333;
+  background-color: #000;
   border-radius: 100%;
   -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
   animation: sk-scaleout 1.0s infinite ease-in-out;
@@ -1425,7 +1425,8 @@ header {
 
 .testimonials .testimonial .client .client-pic img {
   width: 75px;
-  height: 75px -webkit-border-radius: 50%;
+  height: 75px;
+  -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
   display: block;

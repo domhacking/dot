@@ -1,0 +1,30 @@
+.menu-nav li a:before, .menu-nav li a:after {
+    border-radius: 50%;
+    height: 8px;
+    width: 8px;
+    margin-top: -5px;
+}
+
+.menu-nav li a:before{
+    margin-left: 5px;
+}
+
+.menu-nav li a.current:before, .menu-nav li a.current:after, .menu-nav li a:hover:after, .menu-nav li a:hover:before {
+    background: black;
+    margin-left: 5px;
+}
+
+.close_menu i {
+
+    &:hover{
+        border-radius: 50%;
+        background-color: black;
+        color: white;
+
+    }
+}
+.ion-android-close:before {
+    &:hover{
+        width: 40px;
+    }
+}

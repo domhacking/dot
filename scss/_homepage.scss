@@ -1,0 +1,57 @@
+// HERO
+
+.homepage{
+    max-height: 630px;
+    height: 100%;
+    position: relative;
+}
+
+.module.parallax-1{
+     height: 100%;
+     background: url('/images/dot-pr-logo.png') no-repeat;
+     background-position: center;
+}
+
+// HOMEPAGE
+
+.logo{
+    position: fixed;
+    left: 50px;
+    z-index: 22;
+    font-weight:bold;
+
+    h1{
+        margin-top: 15px;
+    }
+}
+
+.img-bg{
+    height: auto;
+    padding: 0;
+
+    img{
+        width: 100%;
+    }
+}
+
+.block-panel{
+    .content-panel{
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.instaReel{
+    margin-top: 40px;
+}
+
+.recButton{
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: 'Cardo', serif;
+    border: solid 1px #b7b7b7;
+    padding: 10px 40px;
+    margin-top: 20px;
+    display: inline-block;;
+}

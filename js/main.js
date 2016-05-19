@@ -233,6 +233,7 @@
      Isotope_masonry_fitRows();
      wow_animated();
      page_loading();
+     paral();
 
    });
 
@@ -272,7 +273,7 @@
 
    if (Modernizr.history) {
 
-     $("#page-wrap").append("<div class='display-none page_loading'><div class='spinner'></div></div>").fadeIn(200);
+     $("#page-wrap").append("<div class='display-none page_loading'><div class='spinner'></div></div>").fadeIn(500);
      var newHash = "",
        $mainContent = $("#main-content"),
        $pageWrap = $("#page-wrap-ex"),
@@ -315,6 +316,7 @@
              $(window).scrollTop(0);
              $(".fit").fitVids();
              page_loading();
+             paral();
 
            });
          });
@@ -328,24 +330,22 @@
    } // otherwise, history is not supported, so nothing fancy here.
 
 
+    function paral(){
+       var parallax = document.querySelectorAll(".parallax"),
+       speed = 0.5;
+
+       window.onscroll = function(){
+           [].slice.call(parallax).forEach(function(el,i){
+
+               var windowYOffset = window.pageYOffset,
+               elBackgrounPos = "50% calc(40% + " + (windowYOffset * speed) + "px)";
+
+               el.style.backgroundPosition = elBackgrounPos;
+
+           });
+       };
+   }
+
+
 
  })(jQuery);
-
-
- (function(){
-
-  var parallax = document.querySelectorAll(".parallax"),
-      speed = 0.5;
-
-  window.onscroll = function(){
-    [].slice.call(parallax).forEach(function(el,i){
-
-      var windowYOffset = window.pageYOffset,
-          elBackgrounPos = "50% calc(50% + " + (windowYOffset * speed) + "px)";
-
-      el.style.backgroundPosition = elBackgrounPos;
-
-    });
-  };
-
-})();

@@ -1,0 +1,108 @@
+#page-wrap, #main-content, #guts{
+    min-height: 100%;
+    height: 100%;
+}
+
+p, ul{
+    // color: black;
+    font-variant: small-caps;
+}
+
+
+.clients-box{
+    li{
+        min-height: 240px;
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 0px;
+
+        a{
+            display: block;
+            height: 100%;
+        }
+
+        &:hover{
+            opacity: 0.7;
+        }
+    }
+}
+
+.clients-box-container{
+    background: #fff;
+}
+
+.rotg{
+    padding-top: 0px !important;
+
+    .bg-rotg{
+        background: url("/images/ROTG-logo.png") no-repeat;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+        background-color: #404040;
+        background-size: contain;
+        min-height: 240px;
+    }
+}
+
+.joy{
+    background: url("/images/joy-logo-bw.png");
+
+}
+
+.secretSpa{
+    background: url('/images/privatespa12-bw.png');
+    min-height: 240px;
+
+    p{
+        font-size: 40px;
+        color: #404040;
+        letter-spacing: 2px;
+        font-family: Raleway,Gill Sans,Lato;
+        text-align: center;
+    }
+}
+
+.kold{
+    background: url('/images/kold-logo.jpg');
+}
+
+
+
+// General
+
+.whiteheader{
+    position: fixed;
+    height: 50px;
+    z-index: 20;
+    background-color: white;
+    top: 0;
+    width: 100%;
+}
+
+.bg-grey{
+    background-color: #f1f1f1;
+}
+
+.headingDot{
+    background: black;
+    width: 150px;
+    border-radius: 50%;
+    height: 150px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 60px;
+}
+
+.headingDot--heading{
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    margin-top: 75px;
+    margin-left: 79px;
+    color: white;
+}

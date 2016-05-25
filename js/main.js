@@ -330,6 +330,10 @@
    } // otherwise, history is not supported, so nothing fancy here.
 
 
+   /* ---------------------------------------------
+    Homepage Parallax
+    --------------------------------------------- */
+
     function paral(){
        var parallax = document.querySelectorAll(".parallax"),
        speed = 0.5;
@@ -345,6 +349,28 @@
            });
        };
    }
+
+   /* ---------------------------------------------
+    Navigation for PR
+    --------------------------------------------- */
+
+
+    function onTabClick(event){
+        var actives = document.querySelectorAll('.active');
+
+
+        for (var i=0; i < actives.length; i++){
+            actives[i].className = actives[i].className.replace('active', '');
+        }
+        event.target.parentElement.className += ' active';
+        
+        document.getElementById(event.target.id.split('Tab')[0]).className += ' active';
+    }
+    var el = document.getElementById('nav-tab');
+
+    el.addEventListener('click', onTabClick, false);
+
+
 
 
 

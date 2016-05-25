@@ -1,64 +1,55 @@
 
+
+.block__nav{
+    padding: 30px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.nav-tabs{
+    margin: 0 auto;
+    position: relative;
+    display: block;
+
+    .nav--item{
+        text-align: center;
+        display: inline-block;
+        float: none;
+        font-size: 18px;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        &.active {
+            background-color: grey;
+            color: white;
+        }
+    }
+}
+
+
+.tab-pane { display: none; }
+.tab-pane.active { display: block; }
+
+
+
+.block__nav{
+    width: 100%;
+
+    .nav{
+        width: 100%;
+    }
+
+    .nav--item{
+        display: inline-block;
+        width: 200px;
+    }
+}
+
+
 // HOMEPAGE //
 
 
 
-.team{
-    padding: 20px 40px 20px 100px;
-    text-align: left;
-
-    h3{
-        margin-bottom: 20px;
-    }
-
-    .telephoneRow{
-        // text-align: left;
-        // margin-top: 25px;
-    }
-
-    .telephoneIcon{
-        background: url('/images/PHONE-01.png') no-repeat;
-        background-size: 100%;
-        background-position:  center;
-        height: 15px;
-        width: 15px;
-        display: inline-block;
-        vertical-align: middle;
-    }
-
-
-    .mailIcon{
-        background: url('/images/email-01.png') no-repeat;
-        background-size: 100%;
-        height: 15px;
-        width: 15px;
-        display: inline-block;
-        vertical-align: middle;
-    }
-
-    p{
-        display: inline-block;
-        text-align: left;
-        margin-bottom: 0;
-    }
-
-    &.address{
-        p{
-            display: block;
-            margin: 0;
-        }
-    }
-
-}
-
-.footer{
-    position: fixed;
-    bottom: 0px;
-    background: white;
-    width: 100%;
-    height: 50px;
-    z-index: 20;
-}
 
 .social_icons{
 
@@ -89,14 +80,3 @@
         }
     }
 }
-
-
-// EVENTS
-
-
-
-// EVENTS AND PR PAGE //
-
-
-
-// Menu

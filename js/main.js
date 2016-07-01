@@ -40,7 +40,7 @@
        $(".page_loading").delay(200).fadeOut("slow");
        $(".page_loading").remove();
      });
-   }
+ }
 
    /* --------------------------------------------
     owl carousel calling function
@@ -234,6 +234,7 @@
      wow_animated();
      page_loading();
      paral();
+    //  prNav();
 
    });
 
@@ -284,11 +285,14 @@
      baseHeight = $pageWrap.height() - $mainContent.height();
 
      $("body").delegate("a", "click", function() {
+        //  console.log('hello');
        var _link;
        _link = $(this).attr("href");
        history.pushState(null, null, _link);
        loadContent(_link);
+       prNav()
        return false;
+
      });
 
 
@@ -342,7 +346,7 @@
            [].slice.call(parallax).forEach(function(el,i){
 
                var windowYOffset = window.pageYOffset,
-               elBackgrounPos = "50% calc(40% + " + (windowYOffset * speed) + "px)";
+               elBackgrounPos = "50% calc(45% + " + (windowYOffset * speed) + "px)";
 
                el.style.backgroundPosition = elBackgrounPos;
 
@@ -351,27 +355,73 @@
    }
 
    /* ---------------------------------------------
-    Navigation for PR
+    Stop Scrolling Over widget
     --------------------------------------------- */
 
 
-    function onTabClick(event){
-        var actives = document.querySelectorAll('.active');
-
-
-        for (var i=0; i < actives.length; i++){
-            actives[i].className = actives[i].className.replace('active', '');
-        }
-        event.target.parentElement.className += ' active';
-        
-        document.getElementById(event.target.id.split('Tab')[0]).className += ' active';
-    }
-    var el = document.getElementById('nav-tab');
-
-    el.addEventListener('click', onTabClick, false);
 
 
 
+
+
+
+   //  var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+   //  var innerDocBody = innerDoc.body;
+   //
+   //
+   //
+   //  $(innerDocBody).bind('mousewheel DOMMouseScroll', function(e) {
+   //     var scrollTo = null;
+   //     console.log('scroll');
+   //
+   //     if (e.type == 'mousewheel') {
+   //         scrollTo = (e.originalEvent.wheelDelta * -1);
+   //     }
+   //     else if (e.type == 'DOMMouseScroll') {
+   //         scrollTo = 40 * e.originalEvent.detail;
+   //     }
+   //
+   //     if (scrollTo) {
+   //         e.preventDefault();
+   //         $(this).scrollTop(scrollTo + $(this).scrollTop());
+   //     }
+   // })
 
 
  })(jQuery);
+
+ var iframe = document.getElementById('scrollableArea');
+ var innerDocTwo = iframe.contentWindow.document;
+
+ iframe.onmouseover = function(){
+    //  var innerDoc = iframe.contentWindow;
+     console.log('test');
+ }
+
+ var activeMenu = document.querySelector('.menu-btn');
+ activeMenu.addEventListener('click', menuActive, false);
+
+ function menuActive(){
+     activeMenu.classList.toggle('activeMenu');
+ }
+
+
+
+
+ function onTabClick(event){
+     var actives = document.querySelectorAll('.active');
+
+     for (var i=0; i < actives.length; i++){
+         actives[i].className = actives[i].className.replace('active', '');
+     }
+     event.target.className += ' active';
+
+     document.getElementById(event.target.id.split('Tab')[0]).className += ' active';
+ }
+
+ var el = document.getElementById('nav-tab');
+
+ if (el){
+     el.addEventListener('click', onTabClick, false);
+     console.log('clicked');
+ }

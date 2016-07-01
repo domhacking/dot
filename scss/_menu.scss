@@ -5,6 +5,17 @@
     margin-top: -5px;
 }
 
+.menu-nav{
+    li{
+        a{
+            // font-family: 'Raleway', sans-serif;
+            // font-weight: bold;
+            font-size: 20px;
+            line-height: 1.5;
+        }
+    }
+}
+
 .menu-nav li a:before{
     margin-left: 5px;
 }

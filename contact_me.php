@@ -1,7 +1,7 @@
 <?php
 
 // Put your email here
-$EmailTo = "youremail@yourdomain.com";
+$EmailTo = " hello@dot-relations.co.uk";
 
 $errorMSG = "";
 
@@ -32,7 +32,7 @@ if (empty($_POST["message"])) {
 } else {
     $message = $_POST["message"];
 }
- 
+
 
 // prepare email body text
 $Body = "";

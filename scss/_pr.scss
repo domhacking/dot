@@ -1,21 +1,24 @@
 
 
 .block__nav{
-    padding: 30px;
+    padding: 0px;
     margin: 0 auto;
     text-align: center;
+    line-height: 0;
 }
 
 .nav-tabs{
     margin: 0 auto;
     position: relative;
     display: block;
+    border-bottom: none;
 
     .nav--item{
         text-align: center;
         display: inline-block;
         float: none;
         font-size: 18px;
+        padding: 30px;
         text-transform: uppercase;
         cursor: pointer;
 
@@ -42,41 +45,5 @@
     .nav--item{
         display: inline-block;
         width: 200px;
-    }
-}
-
-
-// HOMEPAGE //
-
-
-
-
-.social_icons{
-
-    .social{
-        display: inline-block;
-        height: 25px;
-        width: 25px;
-        margin: 15px 0px;
-
-        &.twitter{
-            background: url("../images/twitter.png") no-repeat;
-            background-size: contain;
-        }
-
-        &.facebook{
-            background: url("../images/facebook.png") no-repeat;
-            background-size: contain;
-        }
-
-        &.instagram{
-            background: url("../images/instagram.png") no-repeat;
-            background-size: contain;
-        }
-
-        &.mail{
-            background: url("../images/mail.png") no-repeat;
-            background-size: contain;
-        }
     }
 }

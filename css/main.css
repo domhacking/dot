@@ -38,9 +38,9 @@ html {
 
 body {
   font-family: 'Raleway', sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 24px;
-  color: #7d7d7d;
+  color: #3F3F3F;
   font-weight: 400;
   letter-spacing: 1.5px;
   background-color: #fff;
@@ -194,11 +194,11 @@ blockquote {
   box-sizing: border-box; }
 
 .section-boxed {
-  padding: 0 50px 50px 50px; }
+  padding: 0 50px 0px 50px; }
 
 @media only screen and (max-width: 950px) {
   .section-boxed {
-    padding: 0 20px 20px 20px; }
+    padding: 0 20px 0px 20px; }
   .full-wrapper {
     margin-right: 20px;
     margin-left: 20px; } }
@@ -371,7 +371,6 @@ blockquote {
   position: fixed;
   top: 0;
   left: 0;
-  margin-top: 63px;
   background: #fefefe;
   z-index: 100000; }
 
@@ -1241,7 +1240,7 @@ header {
 
 .clients-box li {
   list-style: none;
-  width: 33%;
+  width: 25%;
   float: left;
   position: relative; }
 
@@ -1264,17 +1263,21 @@ header {
   background-color: rgba(0, 0, 0, 0.06);
   content: ''; }
 
-/*.clients-box li:before {
+.clients-box li:before {
   position: absolute;
   right: 5%;
   top: 0;
   width: 90%;
   height: 1px;
   display: block;
-  background-color: rgba(0, 0, 0, 0.06)d
-  content: '';
-}*/
-.clients-box li:nth-child(3n):after {
+  background-color: rgba(0, 0, 0, 0.06);
+  content: ''; }
+
+.clients-box li:nth-child(4n):after,
+.clients-box li:nth-child(1):before,
+.clients-box li:nth-child(2):before,
+.clients-box li:nth-child(3):before,
+.clients-box li:nth-child(4):before {
   background-color: transparent; }
 
 .clients-box li {
@@ -2408,50 +2411,25 @@ Extra CSS */
   min-height: 100%;
   height: 100%; }
 
-p, ul {
-  font-variant: small-caps; }
+h1 a {
+  color: black;
+  font-weight: bold; }
 
-.clients-box li {
-  min-height: 240px;
-  position: relative;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 0px; }
-  .clients-box li a {
-    display: block;
-    height: 100%; }
-  .clients-box li:hover {
-    opacity: 0.7; }
+.menu-btn {
+  z-index: 1000; }
+  .menu-btn li {
+    background-color: black;
+    border-radius: 2px; }
 
-.clients-box-container {
-  background: #fff; }
+.activeMenu li:nth-child(1) {
+  transform: rotateZ(45deg); }
 
-.rotg {
-  padding-top: 0px !important; }
-  .rotg .bg-rotg {
-    background: url("/images/ROTG-logo.png") no-repeat;
-    background-position: center;
-    height: 100%;
-    width: 100%;
-    background-color: #404040;
-    background-size: contain;
-    min-height: 240px; }
+.activeMenu li:nth-child(2) {
+  display: none; }
 
-.joy {
-  background: url("/images/joy-logo-bw.png"); }
-
-.secretSpa {
-  background: url("/images/privatespa12-bw.png");
-  min-height: 240px; }
-  .secretSpa p {
-    font-size: 40px;
-    color: #404040;
-    letter-spacing: 2px;
-    font-family: Raleway,Gill Sans,Lato;
-    text-align: center; }
-
-.kold {
-  background: url("/images/kold-logo.jpg"); }
+.activeMenu li:nth-child(3) {
+  transform: rotateZ(-45deg);
+  transform-origin: left center; }
 
 .whiteheader {
   position: fixed;
@@ -2462,7 +2440,10 @@ p, ul {
   width: 100%; }
 
 .bg-grey {
-  background-color: #f1f1f1; }
+  background-color: #f0f0f0; }
+
+.bg_grey {
+  background-color: #f0f0f0; }
 
 .headingDot {
   background: black;
@@ -2484,15 +2465,71 @@ p, ul {
   margin-left: 79px;
   color: white; }
 
+.button--effect {
+  position: relative;
+  overflow: hidden;
+  transition: color 0.4s;
+  -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.9, 1);
+  transition-timing-function: cubic-bezier(0.7, 0, 0.9, 1); }
+  .button--effect:before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin: -15px 0 0 1px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #5d5d5d;
+    -webkit-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+    -webkit-transform: scale3d(1, 2, 1);
+    transform: scale3d(1, 2, 1);
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.3s;
+    transition: transform 0.4s, opacity 0.3s, color 0.2s;
+    -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.9, 1);
+    transition-timing-function: cubic-bezier(0.7, 0, 0.9, 1); }
+  .button--effect:hover {
+    color: white;
+    transition: color 0.4s;
+    -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.9, 1);
+    transition-timing-function: cubic-bezier(0.7, 0, 0.9, 1); }
+    .button--effect:hover:before {
+      transform: scale3d(9, 9, 1); }
+
+.social_icons .social {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  margin: 15px 0px;
+  filter: invert(0%);
+  background-size: 25px 25px;
+  background-repeat: no-repeat; }
+  .social_icons .social:hover {
+    filter: invert(100%); }
+  .social_icons .social.twitter {
+    background-image: url("../images/twitter.png"); }
+  .social_icons .social.facebook {
+    background-image: url("../images/facebook.png"); }
+  .social_icons .social.instagram {
+    background-image: url("../images/instagram.png"); }
+  .social_icons .social.mail {
+    background-image: url("../images/mail.png"); }
+  .social_icons .social.tumblr {
+    background-image: url("../images/tumblr.png"); }
+
 .homepage {
-  max-height: 630px;
+  margin-bottom: 0;
   height: 100%;
-  position: relative; }
+  position: relative;
+  background: url("/images/hero-background.jpg") no-repeat;
+  background-size: cover; }
 
 .module.parallax-1 {
   height: 100%;
-  background: url("/images/dot-pr-logo.png") no-repeat;
-  background-position: center; }
+  background: url("/images/dot-logo.png") no-repeat;
+  background-position: center 45%; }
 
 .logo {
   position: fixed;
@@ -2508,6 +2545,9 @@ p, ul {
   .img-bg img {
     width: 100%; }
 
+.team_contener--homepage {
+  padding-bottom: 40px; }
+
 .block-panel .content-panel {
   width: 90%;
   display: block;
@@ -2516,18 +2556,35 @@ p, ul {
 .instaReel {
   margin-top: 40px; }
 
-.recButton {
+.button {
   font-size: 12px;
   text-transform: uppercase;
-  font-family: 'Cardo', serif;
-  border: solid 1px #b7b7b7;
-  padding: 10px 40px;
+  font-family: 'Raleway', sans-serif;
+  float: left;
+  min-width: 150px;
+  max-width: 250px;
+  display: block;
   margin-top: 20px;
-  display: inline-block; }
+  padding: 10px 30px;
+  border: solid 1px #b7b7b7;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale; }
+
+.footer-contact {
+  margin-bottom: 50px;
+  padding-top: 50px; }
+
+.contentContainer {
+  margin: 0 auto;
+  display: inline-block;
+  text-align: left; }
 
 .team {
-  padding: 20px 40px 20px 100px;
-  text-align: left; }
+  position: relative;
+  text-align: center; }
   .team h3 {
     margin-bottom: 20px; }
   .team .telephoneIcon {
@@ -2554,6 +2611,8 @@ p, ul {
     margin: 0; }
 
 .footer {
+  left: 0;
+  padding-left: 50px;
   position: fixed;
   bottom: 0px;
   background: white;
@@ -2566,6 +2625,10 @@ p, ul {
   height: 8px;
   width: 8px;
   margin-top: -5px; }
+
+.menu-nav li a {
+  font-size: 20px;
+  line-height: 1.5; }
 
 .menu-nav li a:before {
   margin-left: 5px; }
@@ -2607,19 +2670,22 @@ p, ul {
   vertical-align: top; }
 
 .block__nav {
-  padding: 30px;
+  padding: 0px;
   margin: 0 auto;
-  text-align: center; }
+  text-align: center;
+  line-height: 0; }
 
 .nav-tabs {
   margin: 0 auto;
   position: relative;
-  display: block; }
+  display: block;
+  border-bottom: none; }
   .nav-tabs .nav--item {
     text-align: center;
     display: inline-block;
     float: none;
     font-size: 18px;
+    padding: 30px;
     text-transform: uppercase;
     cursor: pointer; }
     .nav-tabs .nav--item.active {
@@ -2640,34 +2706,35 @@ p, ul {
     display: inline-block;
     width: 200px; }
 
-.social_icons .social {
-  display: inline-block;
-  height: 25px;
-  width: 25px;
-  margin: 15px 0px; }
-  .social_icons .social.twitter {
-    background: url("../images/twitter.png") no-repeat;
-    background-size: contain; }
-  .social_icons .social.facebook {
-    background: url("../images/facebook.png") no-repeat;
-    background-size: contain; }
-  .social_icons .social.instagram {
-    background: url("../images/instagram.png") no-repeat;
-    background-size: contain; }
-  .social_icons .social.mail {
-    background: url("../images/mail.png") no-repeat;
-    background-size: contain; }
-
 .events-list-container {
   padding-left: 20px; }
 
+.box-container {
+  display: inline-block;
+  width: 100%; }
+
 .box {
   width: 25%;
-  height: 250px;
+  height: 23vw;
   display: inline-block;
-  position: relative;
   vertical-align: top;
+  position: relative;
   text-align: center; }
+  .box--picture {
+    background-color: grey;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .box--1 {
+    background-position: bottom left;
+    background-size: 140%;
+    background-image: url("/images/cupcakeTower.jpg"); }
+  .box--2 {
+    background-image: url("/images/flowers.jpg"); }
+  .box--3 {
+    background-image: url("/images/koldCocktail.jpg"); }
+  .box--4 {
+    background-image: url("/images/kold.jpg"); }
 
 .box__content {
   position: absolute;
@@ -2675,11 +2742,43 @@ p, ul {
   top: 50%;
   left: 50%;
   width: 100%;
-  color: black;
+  font-size: 30px;
+  font-weight: normal;
+  color: #7d7d7d;
   text-transform: uppercase; }
 
-.box--picture {
-  background-color: grey;
-  background-image: url("/images/events1.png");
+.clients-box li {
+  min-height: 240px;
+  position: relative;
+  height: 0px; }
+  .clients-box li a {
+    display: block;
+    height: 100%; }
+  .clients-box li:hover {
+    opacity: 0.7; }
+
+.clients-box-container {
+  background: #fff;
+  margin-top: 0px;
+  padding: 100px; }
+
+.background-image-container {
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: contain;
+  height: 100%; }
+  .background-image-container--rotg {
+    background-image: url("/images/ROTG-logo.png");
+    background-color: #404040; }
+  .background-image-container--joy {
+    background-image: url("/images/joy-logo-bw.png"); }
+  .background-image-container--secretSpa {
+    background-image: url("/images/privatespa12-bw.png"); }
+    .background-image-container--secretSpa p {
+      font-size: 40px;
+      color: #404040;
+      letter-spacing: 2px;
+      font-family: Raleway,Gill Sans,Lato;
+      text-align: center; }
+  .background-image-container--kold {
+    background-image: url("/images/kold-logo.jpg"); }

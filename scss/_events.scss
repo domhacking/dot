@@ -2,13 +2,41 @@
     padding-left: 20px;
 }
 
+.box-container{
+    display: inline-block;
+    width: 100%;
+}
+
 .box{
     width: 25%;
-    height: 250px;
+    height: 23vw;
     display: inline-block;
-    position: relative;
     vertical-align: top;
+    position: relative;
     text-align: center;
+    // background-color: #7d7d7d;
+
+    &--picture{
+        background-color: grey;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &--1{
+        background-position: bottom left;
+        background-size: 140%;
+        background-image: url('/images/cupcakeTower.jpg');
+    }
+    &--2{
+        background-image: url('/images/flowers.jpg');
+    }
+    &--3{
+        background-image: url('/images/koldCocktail.jpg');
+    }
+    &--4{
+        background-image: url('/images/kold.jpg');
+    }
 }
 
 .box__content{
@@ -17,14 +45,12 @@
     top: 50%;
     left: 50%;
     width: 100%;
-    color: black;
+    font-size: 30px;
+    font-weight: normal;
+    color:#7d7d7d;
     text-transform: uppercase;
 }
 
 .box--picture{
-    background-color: grey;
-    background-image: url('/images/events1.png');
-    background-repeat: no-repeat;
-    background-size: cover;
 
 }

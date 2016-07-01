@@ -99,6 +99,9 @@ div.module.parallax-1 {
   .social_icons .social.mail {
     background: url("../images/mail.png") no-repeat;
     background-size: contain; }
+  .social_icons .social.tumblr {
+    background: url("../images/mail.png") no-repeat;
+    background-size: contain; }
 
 .under_line_decs--events {
   width: 70%; }

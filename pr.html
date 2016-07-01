@@ -41,11 +41,10 @@
             <div class="menu-content">
                 <div class="menu-content-wrap">
                     <ul class="menu-nav">
-                        <li><a class="current" href="index.html">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Dot</a></li>
                         <li><a href="events.html">Events</a></li>
-                        <li><a href="pr.html">PR</a></li>
-                        <li><a href="clients.html">Clients</a></li>
-                        <li><a href="blog.html">Blog</a></li>
+                        <li><a class="current" href="pr.html">PR</a></li>
                         <li><a href="contact-us.html">Contact</a></li>
                         <li class="close_menu menu_toggle"><i class="ion-android-close"></i></li>
                     </ul>
@@ -54,6 +53,7 @@
         </nav>
     </header>
     <!-- End Header -->
+    <div class="whiteheader"></div>
     <div id="page-wrap">
         <div id="main-content">
             <div id="guts">
@@ -62,18 +62,18 @@
                     <div class="spinner"></div>
                 </div>
                 <!-- End Page Loader -->
-                <section class="page-section section-boxed">
+                <section class="page-section">
                     <div class="bg_grey">
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="block align-table bg_grey">
-                                    <div class="block-panel align-table-cell  wow fadeInUp">
+                                    <div class="block-panel block-panel--events align-table-cell  wow fadeInUp">
                                         <h3 class="dual_title_b heading">PR</h3>
 
 
                                         <div class="block-panel-content__container">
                                             <p>
-                                                Dot has the contacts to reach magazines, newspapers, bloggers and vloggers who will consider featuring your business across all media and social channels. We put your brand in front of the right people.
+                                                Dot has the contacts to reach magazines, newspapers, celebrities, bloggers and vloggers who will consider featuring your business across all media and social channels. We put your brand in front of the right people.
                                             </p>
                                             <p>
                                                 We offer 3 flexible possibilities:
@@ -86,62 +86,153 @@
                             </div>
                         </div>
                     </div>
+                </section>
+                <section class="page-section section-boxed">
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="block__nav">
                                 <ul id="nav-tab" class="nav-tabs">
-                                    <li class="nav--item active" id="monthlyTab">Monthly</li>
-                                    <li class="nav--item" id="weeklyTab">Weekly</li>
-                                    <li class="nav--item" id="contractTab">Contract</li>
+                                    <li class="nav--item button--effect active" onclick="onTabClick" id="projectTab">Project</li><!--
+                                    --><li class="nav--item button--effect" onclick="onTabClick" id="monthlyTab">Monthly</li><!--
+                                    --><li class="nav--item button--effect" onclick="onTabClick" id="contractTab">Contract</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-
+                </section>
+                <section class="page-section section-boxed">
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="block__content bg_grey tab-content">
-                                <div class="tab-pane active" id="monthly">Home Panel</div>
-                                <div class="tab-pane" id="weekly">Profile Panel</div>
-                                <div class="tab-pane" id="contract">Messages Panel</div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-
-                <div class="team_contener bg_grey">
-                    <div class="container">
-                        <div class="row mb_25">
-                            <div class="col-sm-12">
-                                <div class="text-center mb_35">
-                                    <h3 class="under_line_title">Contact </h3>
-                                    <p class="under_line_decs"></p>
-                                    <div class="team">
-                                        <h3>PR</h3>
-                                        <div class="telephoneRow">
-                                            <div class="telephoneIcon"></div>
-                                            <p>07334 302 283</p>
-                                        </div>
-                                        <div class="mailIcon"></div>
-                                        <p>kehinde@dot-relations.co.uk</p>
+                                <div class="tab-pane active" id="project">
+                                    <div class="block align-table">
+                                       <div class="block-panel img-bg align-table-cell">
+                                           <img src="images/whiteDressGirl-cut.jpg" alt="">
+                                       </div>
+                                       <div class="block-panel align-table-cell wow fadeIn">
+                                           <div class="content-panel">
+                                               <h3 class="dual_title_b">Project</h3>
+                                               <p>
+                                                   If you have a product launch, a new range, an event or need PR for a one off project, we can work with you in the three months lead up to it, helping you gain the desired media coverage.
+                                               </p>
+                                           </div>
+                                       </div>
                                     </div>
-
+                                </div>
+                                <div class="tab-pane" id="monthly">
+                                    <div class="block align-table">
+                                       <div class="block-panel align-table-cell fadeIn">
+                                           <div class="content-panel">
+                                               <h3 class="dual_title_b">Monthly</h3>
+                                               <p>
+                                                  If you need PR monthly, but you don’t want a long term contract, you can sign with us for a month at a time, meaning you can have the option of a break at the end of each month.
+                                               </p>
+                                           </div>
+                                       </div>
+                                       <div class="block-panel img-bg align-table-cell">
+                                           <img src="images/magzinesWindow.jpg" alt="">
+                                       </div>
+                                    </div>
+                                 </div>
+                                <div class="tab-pane" id="contract">
+                                    <div class="block align-table">
+                                        <div class="block-panel img-bg align-table-cell">
+                                            <img src="images/laptopFlowers.jpg" alt="">
+                                        </div>
+                                       <div class="block-panel align-table-cell">
+                                           <div class="content-panel">
+                                               <h3 class="dual_title_b">Contract</h3>
+                                               <p>
+                                                  Our six month contract gives you the opportunity for consistent coverage during the period. We will work closely with you, coming up with monthly reports and provide a detailed review at the end.
+                                               </p>
+                                           </div>
+                                       </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+                <section class="page-section section-boxed">
+                    <div class="">
+                        <div class="row">
+                            <div class="footer-contact col-sm-12">
+
+
+                                <div class="text-center mb_35">
+                                    <h3 class="under_line_title">Contact </h3>
+                                    <p class="under_line_decs"></p>
+
+                                    <div class="contact-container">
+                                        <div class="team col-sm-4">
+                                            <div class="contentContainer">
+                                                <h3>EVENTS</h3>
+                                                <p>Grace Hooper</p>
+                                                <div class="telephoneRow">
+                                                    <div class="telephoneIcon"></div>
+                                                    <p>07334 302 283</p>
+                                                </div>
+                                                <div class="mailRow">
+                                                    <div class="mailIcon"></div>
+                                                    <p>grace@dot-relations.co.uk</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="team col-sm-4">
+                                            <div class="contentContainer">
+                                                <h3>PR</h3>
+                                                <p>Kehinde Akinnawo</p>
+                                                <div class="telephoneRow">
+                                                    <div class="telephoneIcon"></div>
+                                                    <p>07334 302 283</p>
+                                                </div>
+                                                <div class="mailRow">
+                                                    <div class="mailIcon"></div>
+                                                    <p>kehinde@dot-relations.co.uk</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="team col-sm-4 address">
+                                            <div class="contentContainer">
+                                                <h3>ADDRESS</h3>
+                                                <p>Tee Buildings,</p>
+                                                <p>56 Golden Road,</p>
+                                                <p>London S4, 63E</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                 <div class="footer">
+                    <div class="row mb_25">
+                       <div class="col-sm-12 social_icons">
+                             <a class="social twitter" href="https://twitter.com/dot_relations/"></a>
+                             <a class="social facebook" href="http://www.facebook.com"></a>
+                             <a class="social instagram" href="https://www.instagram.com/dot_relations/"></a>
+                             <a class="social tumblr" href="https://www.tumblr.com/"></a>
+                             <a class="social mail" href="mailto:grace@dot-relations.co.uk;kehinde@dot-relations.co.uk"></a>
+                       </div>
+                    </div>
+                  </div>
+            </div>
         </div>
     </div>
-</div>
+
+    <script></script>
+
 <!-- ================================================== -->
 <!-- Placed js files at the end of the document so the pages load faster -->
 <script src="js/jquery.min.js"></script>
 <!-- <script src="js/bootstrap.min.js"></script> -->
+
 <script src="js/jquery.easing.js"></script>
 <script src="js/wow.js"></script>
 <script src="js/imagesloaded.pkgd.min.js"></script>

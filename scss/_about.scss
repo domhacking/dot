@@ -24,24 +24,26 @@
 .background-image-container{
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
     height: 100%;
 
     &--rotg{
         background-image: url("/images/ROTG-logo.png");
         background-color: #404040;
+        background-size: contain;
     }
 
     &--joy{
-        background-image: url("/images/joy-logo-bw.png");
+        background-image: url("/images/joy-logo-colour.png");
+        background-size: 155px 149px;
 
     }
 
     &--secretSpa{
-        background-image: url('/images/privatespa12-bw.png');
+        background-image: url('/images/secret-spa-logo.jpg');
+        background-size: 340px 240px;
 
         p{
-            font-size: 40px;
+            font-size: 32px;
             color: #404040;
             letter-spacing: 2px;
             font-family: Raleway,Gill Sans,Lato;
@@ -50,7 +52,16 @@
     }
 
     &--kold{
-        background-image: url('/images/kold-logo.jpg');
+        background-image: url('/images/kold-logo.png');
+        background-size: 240px 240px;
     }
 
+}
+
+@media only screen and (max-width: 950px) {
+    .paddingAbout{
+        padding-left: 10px;
+        padding-right: 10px;
+
+    }
 }

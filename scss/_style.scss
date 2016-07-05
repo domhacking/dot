@@ -267,6 +267,10 @@ blockquote {
   padding: 40px 6%;
   z-index: 2;
   overflow: hidden;
+
+  @media only screen and (max-width: 550px) {
+        padding: 40px 0;
+  }
 }
 
 .dual_title_a {
@@ -356,7 +360,7 @@ blockquote {
 }
 
 .under_line_title:after {
-  background-color: #eeeeee;
+  background-color: #878875;
   content: "";
   display: block;
   width: 50px;
@@ -372,6 +376,10 @@ blockquote {
 .under_line_decs {
   width: 68%;
   margin: 0 auto 10px;
+
+  @media only screen and (max-width: 550px) {
+    width: 100%;
+  }
 }
 
 .align_left_title {

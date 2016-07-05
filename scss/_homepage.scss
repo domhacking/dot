@@ -21,7 +21,7 @@
 .logo{
     position: fixed;
     left: 50px;
-    z-index: 22;
+    z-index: 1000;
     font-weight:bold;
 
     h1{
@@ -107,3 +107,17 @@
 // 	-webkit-transform: scale3d(1, 1, 1);
 // 	transform: scale3d(1, 1, 1);
 // }
+
+@media only screen and (max-width: 950px) {
+    .logo{
+        left:20px;
+    }
+
+}
+
+
+@media only screen and (max-width: 750px) {
+    .module.parallax-1{
+        background-size: 80% auto;
+    }
+}

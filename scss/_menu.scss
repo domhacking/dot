@@ -1,3 +1,50 @@
+// .fixed_nav{
+//     right: 440px;
+// }
+
+.menu-btn{
+    z-index: 1000;
+
+    li{
+        background-color: black;
+        border-radius: 2px;
+        width: 25px;
+        transition: all 0.3s ease;
+
+    }
+
+    li:nth-child(1){
+        transform: rotateZ(0deg);
+        transform-origin: center;
+        // top: 21px;
+
+    }
+
+    li:nth-child(3){
+        transform: rotateZ(0deg);
+        transform-origin: center;
+        // top: 21px;
+    }
+}
+
+.activeMenu{
+    li:nth-child(1){
+        transform: rotateZ(45deg);
+        transform-origin: center;
+        top: 21px;
+
+    }
+    li:nth-child(2){
+        display: none;
+    }
+    li:nth-child(3){
+        transform: rotateZ(-45deg);
+        transform-origin: center;
+        top: 21px;
+    }
+}
+
+
 .menu-nav li a:before, .menu-nav li a:after {
     border-radius: 50%;
     height: 8px;
@@ -8,10 +55,11 @@
 .menu-nav{
     li{
         a{
-            // font-family: 'Raleway', sans-serif;
-            // font-weight: bold;
+            font-family: 'HelveticaNeue-Condensed', sans-serif;
+            font-weight: bold;
             font-size: 20px;
             line-height: 1.5;
+            color: #5d5d5d;
         }
     }
 }

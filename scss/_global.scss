@@ -13,29 +13,6 @@ h1 a{
     font-weight: bold;
 }
 
-.menu-btn{
-    z-index: 1000;
-
-    li{
-        background-color: black;
-        border-radius: 2px;
-    }
-}
-
-.activeMenu{
-    li:nth-child(1){
-        transform: rotateZ(45deg);
-
-    }
-    li:nth-child(2){
-        display: none;
-    }
-    li:nth-child(3){
-        transform: rotateZ(-45deg);
-        transform-origin: left center;
-
-    }
-}
 
 // General
 
@@ -142,6 +119,9 @@ h1 a{
 
 }
 
+.page-section-footer{
+    margin-top: 50px;
+}
 
 .social_icons{
 
@@ -177,5 +157,11 @@ h1 a{
         &.tumblr{
             background-image: url("../images/tumblr.png");
         }
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .paddingMob{
+        padding-top: 20px;
     }
 }

@@ -30,8 +30,13 @@
 }
 
 
-.tab-pane { display: none; }
-.tab-pane.active { display: block; }
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
 
 
 
@@ -45,5 +50,21 @@
     .nav--item{
         display: inline-block;
         width: 200px;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .block-panel-content--pr{
+        padding: 0 20px;
+    }
+
+    .section-nav-tabs{
+        padding: 0;
+    }
+
+    .block__nav{
+        .nav--item{
+            width: 100%;
+            border-bottom: 1px solid grey;
+        }
     }
 }

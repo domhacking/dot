@@ -131,37 +131,43 @@ h1 a{
         width: 25px;
         margin: 15px 0px;
         filter: invert(0%);
-        background-size: 25px 25px;
+        background-size: contain;
         background-repeat: no-repeat;
 
-        &:hover{
-            filter: invert(100%);
-        }
+        // &:hover{
+        //     filter: invert(100%);
+        //     -webkit-filter: invert(100%);
+        // }
 
         &.twitter{
-            background-image: url("../images/twitter.png");
+            background-image: url("../images/twitter-black.png");
         }
 
         &.facebook{
-            background-image: url("../images/facebook.png");
+            background-image: url("../images/facebook-black.png");
         }
 
         &.instagram{
-            background-image: url("../images/instagram.png");
+            background-image: url("../images/instagram-black.png");
         }
 
         &.mail{
-            background-image: url("../images/mail.png");
+            background-image: url("../images/mail-black.png");
         }
 
         &.tumblr{
-            background-image: url("../images/tumblr.png");
+            background-image: url("../images/tumblr-black.png");
         }
     }
 }
+
+
+
 
 @media only screen and (max-width: 550px) {
     .paddingMob{
         padding-top: 20px;
     }
+
+
 }

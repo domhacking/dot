@@ -458,9 +458,7 @@ blockquote {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin: -40px 0 0 -40px;
-  width: 40px;
-  height: 40px;
+  margin: -40px 0 0 -25px;
   background-color: #000;
   border-radius: 100%;
   -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
@@ -1536,6 +1534,29 @@ header {
   background-color: rgba(0, 0, 0, 0.00);
 }
 
+@media only screen and (max-width: 950px) {
+    .clients-box li:nth-child(2n):after,
+    {
+        background-color: rgba(0, 0, 0, 0.00);
+    }
+
+    .clients-box li:nth-child(3):before,
+    .clients-box li:nth-child(4):before{
+        background-color: rgba(0, 0, 0, 0.06);
+    }
+
+}
+@media only screen and (max-width: 550px) {
+    .clients-box li:nth-child(1n):after,
+    {
+        background-color: rgba(0, 0, 0, 0.00);
+    }
+
+    .clients-box li:nth-child(2):before{
+        background-color: rgba(0, 0, 0, 0.06);
+    }
+}
+
 .clients-box li {
   padding: 30px;
 }
@@ -1966,6 +1987,10 @@ header {
 
 .contact_form {
   padding-top: 4px;
+
+  @media only screen and (max-width: 950px) {
+    padding-top: 34px;
+  }
 }
 
 .contact_form input[type="text"],

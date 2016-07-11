@@ -40,7 +40,8 @@
 
     &--secretSpa{
         background-image: url('/images/secret-spa-logo.jpg');
-        background-size: 340px 240px;
+        // background-size: 340px 240px;
+        background-size: contain;
 
         p{
             font-size: 32px;
@@ -53,15 +54,47 @@
 
     &--kold{
         background-image: url('/images/kold-logo.png');
-        background-size: 240px 240px;
+        // background-size: 240px 240px;
+        background-size: contain;
     }
 
 }
 
+@media only screen and (max-width: 1050px) {
+    .clients-box-container{
+        padding: 100px 0px;
+    }
+
+    .clients-box li:nth-child(1){
+        padding-left: 0;
+    }
+    .clients-box li:nth-child(4){
+        padding-right: 0;
+    }
+
+}
 @media only screen and (max-width: 950px) {
     .paddingAbout{
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
 
     }
+
+    .clients-box li:nth-child(1){
+        padding-left: 20px;
+    }
+    .clients-box li:nth-child(4){
+        padding-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .clients-box-container{
+        padding: 50px 0 0px;
+    }
+
+    .clients-box li{
+        width: 100%;
+    }
+
 }

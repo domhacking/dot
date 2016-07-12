@@ -1,7 +1,7 @@
 <?php
 
 // Put your email here
-$EmailTo = " hello@dot-relations.co.uk";
+$EmailTo = "hello@dot-relations.co.uk";
 
 $errorMSG = "";
 

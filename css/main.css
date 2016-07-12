@@ -2894,6 +2894,11 @@ h1 a {
   .clients-box li:hover {
     opacity: 0.7; }
 
+.block-panel--events .dual_title_b {
+  width: 68%;
+  margin: 0 auto;
+  padding: 30px 0 10px; }
+
 .clients-box-container {
   background: #fff;
   margin-top: 0px;

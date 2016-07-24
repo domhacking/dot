@@ -354,44 +354,12 @@
             });
         };
     }
-
-    /* ---------------------------------------------
-    Stop Scrolling Over widget
-    --------------------------------------------- */
-
-
-
-
-
-
-
-
-    //  var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
-    // var innerDocTwo = iframe.contentWindow.document;
-    //  var innerDocBody = innerDoc.body;
-    //
-    //
-    //
-    //  $(innerDocBody).bind('mousewheel DOMMouseScroll', function(e) {
-    //     var scrollTo = null;
-    //     console.log('scroll');
-    //
-    //     if (e.type == 'mousewheel') {
-    //         scrollTo = (e.originalEvent.wheelDelta * -1);
-    //     }
-    //     else if (e.type == 'DOMMouseScroll') {
-    //         scrollTo = 40 * e.originalEvent.detail;
-    //     }
-    //
-    //     if (scrollTo) {
-    //         e.preventDefault();
-    //         $(this).scrollTop(scrollTo + $(this).scrollTop());
-    //     }
-    // })
-
-
 })(jQuery);
 
+
+/* ---------------------------------------------
+    Toggle Burger
+--------------------------------------------- */
 
 var activeMenu = document.querySelector('.menu-btn');
 activeMenu.addEventListener('click', menuActive, false);
@@ -400,6 +368,9 @@ function menuActive(){
     activeMenu.classList.toggle('activeMenu');
 }
 
+/* ---------------------------------------------
+    Tabs on PR page
+--------------------------------------------- */
 
 function onTabClick(event){
     var actives = document.querySelectorAll('.active');
@@ -416,5 +387,32 @@ var el = document.getElementById('nav-tab');
 
 if (el){
     el.addEventListener('click', onTabClick, false);
-    console.log('clicked');
+
+}
+
+
+/* ---------------------------------------------
+    Adding background white to header & footer
+--------------------------------------------- */
+window.onload = function(){
+    if (window.location.pathname == '/index.html' || '/') {
+        var whiteheader = document.querySelector('.whiteheader');
+        var footer = document.querySelector('.footerTransparent');
+
+
+        document.body.onscroll = function(){
+            var h = window.innerHeight;
+            if (h < pageYOffset){
+                whiteheader.style.backgroundColor = "white";
+            } else {
+                whiteheader.style.backgroundColor = "transparent";
+            }
+            if ( pageYOffset > 50) {
+                footer.style.backgroundColor = "white";
+            } else {
+                footer.style.backgroundColor = "transparent";
+            }
+        }
+    }
+
 }

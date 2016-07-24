@@ -5,14 +5,25 @@
     // max-height: 630px;
     height: 100%;
     position: relative;
-    background: url('/images/hero-background.jpg') no-repeat;
+    background: url('/images/hero-backgroundNew.jpg') no-repeat;
     background-size: cover;
+    background-position: center;
+    // transition: opacity 4s linear;
+    // opacity: 0;
+
+    &:hover{
+        opacity: 1;
+    }
 }
 
 .module.parallax-1{
      height: 100%;
      background: url('/images/dot-logo.png') no-repeat;
      background-position: center 45% ;
+}
+
+header{
+    margin-bottom: 0;
 }
 
 // HOMEPAGE

@@ -8,8 +8,15 @@
 .block-panel--events{
     padding-top: 100px;
     padding-bottom: 100px;
+
+    .heading{
+        margin-bottom: 50px !important;
+    }
 }
 
+.team_contener--events{
+    padding-bottom: 60px;
+}
 
 .box-container{
     display: inline-block;
@@ -43,7 +50,7 @@
         background-image: url('/images/cupcakeTower.jpg');
     }
     &--2{
-        background-image: url('/images/flowers.jpg');
+        background-image: url('/images/grassTunnel.jpg');
     }
     &--3{
         background-image: url('/images/koldCocktail.jpg');
@@ -51,6 +58,11 @@
     &--4{
         background-image: url('/images/kold.jpg');
     }
+}
+
+.bg_darkGrey{
+    background-color: #7d7d7d;
+    color: white;
 }
 
 .box__content{

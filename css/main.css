@@ -1244,7 +1244,7 @@ header {
 
 .clients-box li {
   list-style: none;
-  width: 25%;
+  width: 33%;
   float: left;
   position: relative; }
 
@@ -1277,11 +1277,10 @@ header {
   background-color: rgba(0, 0, 0, 0.06);
   content: ''; }
 
-.clients-box li:nth-child(4n):after,
+.clients-box li:nth-child(3n):after,
 .clients-box li:nth-child(1):before,
 .clients-box li:nth-child(2):before,
-.clients-box li:nth-child(3):before,
-.clients-box li:nth-child(4):before {
+.clients-box li:nth-child(3):before {
   background-color: transparent; }
 
 @media only screen and (max-width: 950px) {
@@ -2449,10 +2448,13 @@ h1 a {
   position: fixed;
   height: 50px;
   z-index: 20;
-  background-color: transparent;
+  background-color: white;
   top: 0;
   width: 100%;
   transition: all 0.3s linear; }
+
+.whiteheaderTransparent {
+  background-color: transparent; }
 
 .whiteheaderTwo {
   position: fixed;
@@ -2564,6 +2566,17 @@ h1 a {
 
 header {
   margin-bottom: 0; }
+
+.arrow {
+  background: url("/images/downArrow.png") no-repeat;
+  background-size: contain;
+  height: 30px;
+  width: 50px;
+  position: absolute;
+  left: 50%;
+  margin-left: -25px;
+  bottom: 5px;
+  transition: all 0.3s linear; }
 
 .logo {
   position: fixed;
@@ -2778,7 +2791,7 @@ header {
   margin-bottom: 50px; }
 
 .block-panel-content__container {
-  max-width: 600px;
+  max-width: 850px;
   margin: 0 auto; }
 
 .block-panel__col {
@@ -2837,7 +2850,7 @@ header {
   padding-left: 20px; }
 
 .under_line_decs--events {
-  width: 70%; }
+  width: 80%; }
 
 .block-panel--events {
   padding-top: 100px;
@@ -2856,6 +2869,10 @@ header {
   width: 50%;
   display: inline-block; }
 
+.wideContainer {
+  max-width: 850px;
+  margin: 0 auto; }
+
 .box {
   width: 50%;
   height: 23vw;
@@ -2873,7 +2890,7 @@ header {
     background-size: 140%;
     background-image: url("/images/cupcakeTower.jpg"); }
   .box--2 {
-    background-image: url("/images/grassTunnel.jpg"); }
+    background-image: url("/images/flowers.jpg"); }
   .box--3 {
     background-image: url("/images/koldCocktail.jpg"); }
   .box--4 {
@@ -2940,10 +2957,15 @@ header {
   .background-image-container--rotg {
     background-image: url("/images/ROTG-logo.png");
     background-color: #404040;
-    background-size: contain; }
+    background-size: contain;
+    max-width: 240px;
+    margin: 0 auto; }
   .background-image-container--joy {
     background-image: url("/images/joy-logo-colour.png");
     background-size: 155px 149px; }
+  .background-image-container--bea {
+    background-image: url("/images/bea-logo.png");
+    background-size: 231px 97px; }
   .background-image-container--secretSpa {
     background-image: url("/images/secret-spa-logo.jpg");
     background-size: contain; }

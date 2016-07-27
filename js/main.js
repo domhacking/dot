@@ -395,24 +395,24 @@ if (el){
     Adding background white to header & footer
 --------------------------------------------- */
 window.onload = function(){
-    if (window.location.pathname == '/index.html' || '/') {
-        var whiteheader = document.querySelector('.whiteheader');
-        var footer = document.querySelector('.footerTransparent');
+    var whiteheader = document.querySelector('.whiteheaderTransparent');
+    var footer = document.querySelector('.footerTransparent');
+    var arrow = document.querySelector('.arrow');
 
 
-        document.body.onscroll = function(){
-            var h = window.innerHeight;
-            if (h < pageYOffset){
-                whiteheader.style.backgroundColor = "white";
-            } else {
-                whiteheader.style.backgroundColor = "transparent";
-            }
-            if ( pageYOffset > 50) {
-                footer.style.backgroundColor = "white";
-            } else {
-                footer.style.backgroundColor = "transparent";
-            }
+    document.body.onscroll = function(){
+        var h = window.innerHeight;
+        if (h < pageYOffset){
+            whiteheader.style.backgroundColor = "white";
+        } else {
+            whiteheader.style.backgroundColor = "transparent";
+        }
+        if ( pageYOffset > 50) {
+            footer.style.backgroundColor = "white";
+            arrow.style.opacity = "0";
+        } else {
+            footer.style.backgroundColor = "transparent";
+            arrow.style.opacity = "1"
         }
     }
-
 }

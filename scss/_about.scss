@@ -38,12 +38,18 @@
         background-image: url("/images/ROTG-logo.png");
         background-color: #404040;
         background-size: contain;
+        max-width: 240px;
+        margin: 0 auto;
     }
 
     &--joy{
         background-image: url("/images/joy-logo-colour.png");
         background-size: 155px 149px;
+    }
 
+    &--bea{
+        background-image: url("/images/bea-logo.png");
+        background-size: 231px 97px;
     }
 
     &--secretSpa{
@@ -68,6 +74,10 @@
 
 }
 
+.rightAlign{
+    // text-align: right;
+}
+
 @media only screen and (max-width: 1050px) {
     .clients-box-container{
         padding: 100px 0px;
@@ -81,6 +91,7 @@
     }
 
 }
+
 @media only screen and (max-width: 950px) {
     .paddingAbout{
         padding-left: 20px;

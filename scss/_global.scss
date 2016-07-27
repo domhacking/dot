@@ -20,10 +20,14 @@ h1 a{
     position: fixed;
     height: 50px;
     z-index: 20;
-    background-color: transparent;
+    background-color: white;
     top: 0;
     width: 100%;
     transition: all 0.3s linear;
+}
+
+.whiteheaderTransparent{
+    background-color: transparent;
 }
 
 .whiteheaderTwo{

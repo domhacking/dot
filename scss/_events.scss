@@ -3,7 +3,7 @@
 }
 
 .under_line_decs--events{
-    width: 70%;
+    width: 80%;
 }
 .block-panel--events{
     padding-top: 100px;
@@ -28,6 +28,11 @@
     display: inline-block;
 }
 
+.wideContainer{
+    max-width: 850px;
+    margin: 0 auto;
+}
+
 .box{
     width: 50%;
     height: 23vw;
@@ -50,7 +55,7 @@
         background-image: url('/images/cupcakeTower.jpg');
     }
     &--2{
-        background-image: url('/images/grassTunnel.jpg');
+        background-image: url('/images/flowers.jpg');
     }
     &--3{
         background-image: url('/images/koldCocktail.jpg');

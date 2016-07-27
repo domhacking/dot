@@ -26,6 +26,18 @@ header{
     margin-bottom: 0;
 }
 
+.arrow{
+    background: url('/images/downArrow.png') no-repeat;
+    background-size: contain;
+    height: 30px;
+    width: 50px;
+    position: absolute;
+    left: 50%;
+    margin-left: -25px;
+    bottom: 5px;
+    transition: all 0.3s linear;
+}
+
 // HOMEPAGE
 
 .logo{

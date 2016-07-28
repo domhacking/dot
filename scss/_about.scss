@@ -49,7 +49,8 @@
 
     &--bea{
         background-image: url("/images/bea-logo.png");
-        background-size: 231px 97px;
+        // background-size: 225px 225px;
+        background-size: contain;
     }
 
     &--secretSpa{
@@ -104,6 +105,10 @@
     }
     .clients-box li:nth-child(4){
         padding-right: 20px;
+    }
+
+    .block-panel--events .dual_title_b{
+        width: 100%;
     }
 }
 

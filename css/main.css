@@ -2524,6 +2524,10 @@ h1 a {
     .button--effect:hover:before {
       transform: scale3d(9, 9, 1); }
 
+.button--center {
+  left: 50%;
+  margin-left: -75px; }
+
 .page-section-footer {
   margin-top: 50px; }
 
@@ -2578,6 +2582,9 @@ header {
   margin-left: -25px;
   bottom: 5px;
   transition: all 0.3s linear; }
+
+.touch:hover {
+  text-decoration: underline; }
 
 .logo {
   position: fixed;

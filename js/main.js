@@ -207,15 +207,42 @@
     --------------------------------------------- */
 
     $(window).scroll(function() {
+        var whiteheader = document.querySelector('.whiteheaderTransparent');
+        var footer = document.querySelector('.footerTransparent');
+        var arrow = document.querySelector('.arrow');
+        var copyRight = document.querySelector('.copyRight');
 
         if ($(window).scrollTop() > 10) {
             $(".main-nav .menu-btn").addClass("fixed_nav");
         } else {
             $(".main-nav .menu-btn").removeClass("fixed_nav");
+        };
+
+        var h = window.innerHeight;
+        if (h < pageYOffset){
+            whiteheader.style.backgroundColor = "white";
+        } else {
+            whiteheader.style.backgroundColor = "transparent";
+        };
+        if ( pageYOffset > 50) {
+            footer.style.backgroundColor = "white";
+            arrow.style.opacity = "0";
+        } else {
+            footer.style.backgroundColor = "transparent";
+            arrow.style.opacity = "1"
+        };
+
+        if($(window).scrollTop() + $(window).height() == $(document).height()) {
+            copyRight.style.display = "inline-block";
+        } else {
+            copyRight.style.display = "none";
         }
 
 
+
+
     });
+
 
 
     /* ---------------------------------------------
@@ -247,6 +274,7 @@
         $('.menu_toggle, .overlay-content-wrap, .menu-nav li a').on('click', function() {
             $('.menu-content').fadeToggle(200);
             $('menu-btn').add('.activeMenu');
+
         });
 
         /********  FitVids.js *******/
@@ -333,27 +361,6 @@
         });
 
     } // otherwise, history is not supported, so nothing fancy here.
-
-
-    /* ---------------------------------------------
-    Homepage Parallax
-    --------------------------------------------- */
-
-    function paral(){
-        var parallax = document.querySelectorAll(".parallax"),
-        speed = 0.5;
-
-        window.onscroll = function(){
-            [].slice.call(parallax).forEach(function(el,i){
-
-                var windowYOffset = window.pageYOffset,
-                elBackgrounPos = "50% calc(45% + " + (windowYOffset * speed) + "px)";
-
-                el.style.backgroundPosition = elBackgrounPos;
-
-            });
-        };
-    }
 })(jQuery);
 
 
@@ -381,38 +388,83 @@ function onTabClick(event){
     event.target.className += ' active';
 
     document.getElementById(event.target.id.split('Tab')[0]).className += ' active';
-}
+};
 
 var el = document.getElementById('nav-tab');
 
 if (el){
     el.addEventListener('click', onTabClick, false);
 
-}
+};
 
 
 /* ---------------------------------------------
-    Adding background white to header & footer
+    Instagram Reel at the footer
 --------------------------------------------- */
-window.onload = function(){
-    var whiteheader = document.querySelector('.whiteheaderTransparent');
-    var footer = document.querySelector('.footerTransparent');
-    var arrow = document.querySelector('.arrow');
+function instagramReel(){
+    var ulContainer = document.getElementById('rudr_instafeed');
+    var instagramContainer = document.querySelector('.instagramContainer');
 
 
-    document.body.onscroll = function(){
-        var h = window.innerHeight;
-        if (h < pageYOffset){
-            whiteheader.style.backgroundColor = "white";
-        } else {
-            whiteheader.style.backgroundColor = "transparent";
+    var token = '2178488517.1677ed0.f22bef2885a64a439a2266cc4858b28c', // learn how to obtain it below
+        userid = 2178488517, // User ID - get it in source HTML of your Instagram profile or look at the next example :)
+        num_photos = 50; // how much photos do you want to get
+
+    $.ajax({
+        url: 'https://api.instagram.com/v1/users/' + userid + '/media/recent', // or /users/self/media/recent for Sandbox
+        dataType: 'jsonp',
+        type: 'GET',
+        data: {access_token: token, count: num_photos},
+        success: function(data){
+        // 	console.log(data);
+            for( x in data.data ){
+                $('#rudr_instafeed').append('<li class="instagramList"><a target="blank" href="'+data.data[x].link+'"><img src="'+data.data[x].images.standard_resolution.url+'"></a></li>');
+            }
+
+            var transitionDistance = (-1 * (ulContainer.offsetWidth - instagramContainer.offsetWidth));
+            var position = 0;
+            var active = true;
+
+            var updatePosition = function(direction) {
+
+                if (position > transitionDistance ) {
+                    active = true;
+
+                    if (active) {
+                        position += (1 * direction);
+                        ulContainer.style.transform = "translateX(" + position + "px)";
+                        requestAnimationFrame(updatePosition.bind(this, direction));
+                    }
+                }
+            }
+                updatePosition(-1);
+
+
+        },
+        error: function(data){
+            // console.log(data); // send the error notifications to console
         }
-        if ( pageYOffset > 50) {
-            footer.style.backgroundColor = "white";
-            arrow.style.opacity = "0";
-        } else {
-            footer.style.backgroundColor = "transparent";
-            arrow.style.opacity = "1"
-        }
-    }
-}
+    });
+};
+
+/* ---------------------------------------------
+Homepage Parallax
+--------------------------------------------- */
+function paral(){
+    var parallax = document.querySelectorAll(".parallax"),
+    speed = 0.5;
+
+    window.onscroll = function(){
+        [].slice.call(parallax).forEach(function(el,i){
+
+            var windowYOffset = window.pageYOffset,
+            elBackgrounPos = "50% calc(45% + " + (windowYOffset * speed) + "px)";
+
+            el.style.backgroundPosition = elBackgrounPos;
+
+        });
+    };
+};
+
+paral();
+instagramReel();

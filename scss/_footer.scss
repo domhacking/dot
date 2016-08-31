@@ -15,6 +15,15 @@
     text-align: left;
 }
 
+.contact-link{
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+
+    &:hover{
+      transition: 0.5s all ease;
+      border-color: #7d7d7d;
+    }
+}
 
 .team{
     position: relative;

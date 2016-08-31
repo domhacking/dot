@@ -93,11 +93,27 @@
     background-color: transparent;
 }
 
-// .myLink{
-//     // right: 20px;
-//     position: absolute;
-// }
+.social_icons{
+    width: 50%;
 
+}
+
+.copyRight{
+    padding-top: 15px;
+    padding-right: 60px;
+    height: 50px;
+    width: 50%;
+    display: inline-block;
+    display: none;
+    text-align: right;
+    transition: all 0.2s linear
+}
+
+.footer-copy{
+    font-size: 10px;
+    line-height: 12px;
+    margin: 0;
+}
 
 @media only screen and (max-width: 950px) {
 

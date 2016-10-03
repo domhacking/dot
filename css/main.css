@@ -1244,7 +1244,7 @@ header {
 
 .clients-box li {
   list-style: none;
-  width: 25%;
+  width: 33%;
   float: left;
   position: relative; }
 
@@ -1277,11 +1277,10 @@ header {
   background-color: rgba(0, 0, 0, 0.06);
   content: ''; }
 
-.clients-box li:nth-child(4n):after,
+.clients-box li:nth-child(3n):after,
 .clients-box li:nth-child(1):before,
 .clients-box li:nth-child(2):before,
-.clients-box li:nth-child(3):before,
-.clients-box li:nth-child(4):before {
+.clients-box li:nth-child(3):before {
   background-color: transparent; }
 
 @media only screen and (max-width: 950px) {
@@ -3072,6 +3071,9 @@ header {
   .background-image-container--kold {
     background-image: url("/images/kold-logo.png");
     background-size: contain; }
+  .background-image-container--ltc {
+    background-image: url("/images/londonteacompany.png");
+    background-size: 230px auto; }
 
 @media only screen and (max-width: 1050px) {
   .clients-box-container {

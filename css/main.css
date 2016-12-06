@@ -3074,6 +3074,9 @@ header {
   .background-image-container--ltc {
     background-image: url("/images/londonteacompany.png");
     background-size: 230px auto; }
+  .background-image-container--tokyo {
+    background-image: url("/images/tokyojames.png");
+    background-size: 230px auto; }
 
 @media only screen and (max-width: 1050px) {
   .clients-box-container {

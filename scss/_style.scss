@@ -1487,7 +1487,7 @@ header {
 
 .clients-box li {
   list-style: none;
-  width: 33%;
+  width: 25%;
   float: left;
   position: relative;
 }
@@ -1525,11 +1525,11 @@ header {
   content: '';
 }
 
-.clients-box li:nth-child(3n):after,
+.clients-box li:nth-child(4n):after,
 .clients-box li:nth-child(1):before,
 .clients-box li:nth-child(2):before,
 .clients-box li:nth-child(3):before,
-// .clients-box li:nth-child(4):before,
+.clients-box li:nth-child(4):before,
 {
   background-color: rgba(0, 0, 0, 0.00);
 }

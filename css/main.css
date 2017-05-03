@@ -3040,6 +3040,7 @@ header {
 .background-image-container {
   background-position: center;
   background-repeat: no-repeat;
+  background-size: contain;
   height: 100%; }
   .background-image-container--rotg {
     background-image: url("/images/ROTG-logo.png");
@@ -3051,11 +3052,9 @@ header {
     background-image: url("/images/joy-logo-colour.png");
     background-size: 155px 149px; }
   .background-image-container--bea {
-    background-image: url("/images/bea-logo.png");
-    background-size: contain; }
+    background-image: url("/images/bea-logo.png"); }
   .background-image-container--secretSpa {
-    background-image: url("/images/secret-spa-logo.jpg");
-    background-size: contain; }
+    background-image: url("/images/secret-spa-logo.jpg"); }
     .background-image-container--secretSpa p {
       font-size: 32px;
       color: #404040;
@@ -3063,17 +3062,15 @@ header {
       font-family: Raleway,Gill Sans,Lato;
       text-align: center; }
   .background-image-container--kold {
-    background-image: url("/images/kold-logo.png");
-    background-size: contain; }
+    background-image: url("/images/kold-logo.png"); }
   .background-image-container--ltc {
-    background-image: url("/images/londonteacompany.png");
-    background-size: contain; }
+    background-image: url("/images/londonteacompany.png"); }
   .background-image-container--tokyo {
-    background-image: url("/images/tokyojames.png");
-    background-size: contain; }
+    background-image: url("/images/tokyojames.png"); }
   .background-image-container--gozel {
-    background-image: url("/images/gozel-green.png");
-    background-size: contain; }
+    background-image: url("/images/gozel-green.png"); }
+  .background-image-container--maisondefleurs {
+    background-image: url("/images/maisondefleurs.png"); }
 
 @media only screen and (max-width: 1050px) {
   .clients-box-container {

@@ -32,6 +32,7 @@
 .background-image-container{
     background-position: center;
     background-repeat: no-repeat;
+    background-size: contain;
     height: 100%;
 
     &--rotg{
@@ -49,14 +50,10 @@
 
     &--bea{
         background-image: url("/images/bea-logo.png");
-        // background-size: 225px 225px;
-        background-size: contain;
     }
 
     &--secretSpa{
         background-image: url('/images/secret-spa-logo.jpg');
-        // background-size: 340px 240px;
-        background-size: contain;
 
         p{
             font-size: 32px;
@@ -69,26 +66,23 @@
 
     &--kold{
         background-image: url('/images/kold-logo.png');
-        // background-size: 240px 240px;
-        background-size: contain;
     }
 
     &--ltc{
         background-image: url('/images/londonteacompany.png');
         // background-size: 240px 240px;
-        background-size: contain;
     }
 
     &--tokyo{
         background-image: url('/images/tokyojames.png');
-        // background-size: 240px 240px;
-        background-size: contain;
     }
 
     &--gozel{
         background-image: url('/images/gozel-green.png');
-        // background-size: 240px 240px;
-        background-size: contain;
+    }
+
+    &--maisondefleurs{
+        background-image: url('/images/maisondefleurs.png');
     }
 
 }

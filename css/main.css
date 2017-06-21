@@ -3071,6 +3071,8 @@ header {
     background-image: url("/images/gozel-green.png"); }
   .background-image-container--maisondefleurs {
     background-image: url("/images/maisondefleurs.png"); }
+  .background-image-container--zeadora {
+    background-image: url("/images/zeadora.png"); }
 
 @media only screen and (max-width: 1050px) {
   .clients-box-container {

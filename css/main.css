@@ -2566,7 +2566,7 @@ h1 a {
 
 .module.parallax-1 {
   height: 100%;
-  background: url("/images/dot-logo.png") no-repeat;
+  background: url("/images/dot-new-logo.png") no-repeat;
   background-position: center 45%; }
 
 header {
@@ -3081,6 +3081,10 @@ header {
     background-image: url("/images/stay_sunny_chicago.png"); }
   .background-image-container--zeadora {
     background-image: url("/images/zeadora.png"); }
+  .background-image-container--threefloor {
+    background-image: url("/images/threefloor.png"); }
+  .background-image-container--slashedbytia {
+    background-image: url("/images/slashedbytia.png"); }
 
 @media only screen and (max-width: 1050px) {
   .clients-box-container {

@@ -2468,8 +2468,12 @@ h1 a {
 .bg-grey {
   background-color: #f0f0f0; }
 
-.bg_grey {
-  background-color: #f0f0f0; }
+.bg-black {
+  background-color: black; }
+
+.color-white {
+  color: white;
+}
 
 .headingDot {
   background: black;
@@ -2558,7 +2562,6 @@ h1 a {
   margin-bottom: 0;
   height: 100%;
   position: relative;
-  background: url("/images/hero-backgroundNew.jpg") no-repeat;
   background-size: cover;
   background-position: center; }
   .homepage:hover {
@@ -2566,14 +2569,14 @@ h1 a {
 
 .module.parallax-1 {
   height: 100%;
-  background: url("/images/dot-new-logo.png") no-repeat;
+  background: url("../images/atentive-background.jpg") no-repeat;
   background-position: center 45%; }
 
 header {
   margin-bottom: 0; }
 
 .arrow {
-  background: url("/images/downArrow.png") no-repeat;
+  background: url("../images/downArrow.png") no-repeat;
   background-size: contain;
   height: 30px;
   width: 50px;
@@ -2700,7 +2703,7 @@ header {
   .team h3 {
     margin-bottom: 20px; }
   .team .telephoneIcon {
-    background: url("/images/PHONE-01.png") no-repeat;
+    background: url("../images/PHONE-01.png") no-repeat;
     background-size: 100%;
     background-position: center;
     height: 15px;
@@ -2708,7 +2711,7 @@ header {
     display: inline-block;
     vertical-align: middle; }
   .team .mailIcon {
-    background: url("/images/email-01.png") no-repeat;
+    background: url("../images/email-01.png") no-repeat;
     background-size: 100%;
     height: 15px;
     width: 15px;
@@ -2974,13 +2977,13 @@ header {
   .box--1 {
     background-position: bottom left;
     background-size: 140%;
-    background-image: url("/images/cupcakeTower.jpg"); }
+    background-image: url("../images/cupcakeTower.jpg"); }
   .box--2 {
-    background-image: url("/images/flowers.jpg"); }
+    background-image: url("../images/flowers.jpg"); }
   .box--3 {
-    background-image: url("/images/koldCocktail.jpg"); }
+    background-image: url("../images/koldCocktail.jpg"); }
   .box--4 {
-    background-image: url("/images/kold.jpg"); }
+    background-image: url("../images/kold.jpg"); }
 
 .bg_darkGrey {
   background-color: #7d7d7d;
@@ -3043,7 +3046,7 @@ header {
   background-size: contain;
   height: 100%; }
   .background-image-container--rotg {
-    background-image: url("/images/ROTG-logo.png");
+    background-image: url("../images/ROTG-logo.png");
     background-color: #404040;
     background-size: contain;
     max-width: 240px;
@@ -3052,7 +3055,7 @@ header {
     background-image: url("/images/joy-logo-colour.png");
     background-size: 155px 149px; }
   .background-image-container--bea {
-    background-image: url("/images/bea-logo.png"); }
+    background-image: url("../images/bea-logo.png"); }
   .background-image-container--secretSpa {
     background-image: url("/images/secret-spa-logo.jpg"); }
     .background-image-container--secretSpa p {
@@ -3062,7 +3065,7 @@ header {
       font-family: Raleway,Gill Sans,Lato;
       text-align: center; }
   .background-image-container--kold {
-    background-image: url("/images/kold-logo.png"); }
+    background-image: url("../images/kold-logo.png"); }
   .background-image-container--ltc {
     background-image: url("/images/londonteacompany.png"); }
   .background-image-container--tokyo {
@@ -3070,17 +3073,17 @@ header {
   .background-image-container--gozel {
     background-image: url("/images/gozel-green.png"); }
   .background-image-container--maisondefleurs {
-    background-image: url("/images/maisondefleurs.png"); }
+    background-image: url("../images/maisondefleurs.png"); }
   .background-image-container--percol_coffee {
     background-image: url("/images/percol_coffee.png"); }
   .background-image-container--alexandra_de_curtis {
     background-image: url("/images/alexandra_de_curtis.png"); }
   .background-image-container--thea {
-    background-image: url("/images/thea.jpg"); }
+    background-image: url("../images/thea.jpg"); }
   .background-image-container--stay_sunny_chicago {
     background-image: url("/images/stay_sunny_chicago.png"); }
   .background-image-container--zeadora {
-    background-image: url("/images/zeadora.png"); }
+    background-image: url("../images/zeadora.png"); }
   .background-image-container--threefloor {
     background-image: url("/images/threefloor.png"); }
   .background-image-container--slashedbytia {

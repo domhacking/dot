@@ -41,7 +41,7 @@ html{
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'GFS Didot', serif;
   font-size: 14px;
   line-height: 24px;
   color: #3F3F3F;
@@ -116,7 +116,6 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
   font-style: inherit;
@@ -131,7 +130,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Helvetica Neue, sans-serif;
 }
 
 a,
@@ -425,7 +423,6 @@ blockquote {
 }
 
 .hero_title p {
-  font-family: 'Cardo', serif;
   color: #555;
   font-size: 18px;
   line-height: 28px;
@@ -638,7 +635,6 @@ header {
   font-weight: 400;
   color: #393939;
   position: relative;
-  font-family: 'Cardo', serif;
 }
 
 .menu-nav li.nav_logo {
@@ -807,7 +803,6 @@ header {
 }
 
 .single_work_header .single_work_title p {
-  font-family: 'Cardo', serif;
   color: #555;
   font-size: 18px;
   line-height: 28px;
@@ -834,7 +829,6 @@ header {
 
 .details_list strong {
   font-weight: 700;
-  font-family: 'Cardo', serif;
   letter-spacing: 1px;
   font-size: 16px;
   padding: 0 5px;
@@ -848,7 +842,6 @@ header {
   font-size: 13px;
   font-weight: 400;
   letter-spacing: 6px;
-  font-family: 'Cardo', serif;
 }
 
 .work_nav i {
@@ -1049,7 +1042,6 @@ header {
   right: 0;
   z-index: 1;
   width: 80%;
-  font-family: 'Cardo', serif;
 }
 
 .work-title h2 {
@@ -1192,7 +1184,6 @@ header {
     margin: auto;
     position: static;
     width: 100%;
-    font-family: 'Cardo', serif;
     text-align: center;
     margin-bottom: 30px;
   }
@@ -1324,7 +1315,6 @@ header {
   margin-bottom: 4px;
   text-transform: uppercase;
   position: relative;
-  font-family: 'Raleway', sans-serif;
   font-weight: 700;
 }
 
@@ -1356,11 +1346,6 @@ header {
   filter: alpha(opacity=90);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
 }
-
-.team-person .overlay .content-wrap h3 {
-  font-family: 'Raleway', sans-serif;
-}
-
 
 /*=================================================
 5 - Testimonials
@@ -1763,7 +1748,6 @@ header {
 }
 
 .single_post .post_title {
-  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   letter-spacing: 5px;
   text-transform: uppercase;
@@ -1901,7 +1885,6 @@ header {
 .comment-wrap .comment-title,
 .comment-form-warp .comment-title {
   font-size: 17px;
-  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   text-transform: uppercase;
   color: #5d5d5d;
@@ -2003,7 +1986,7 @@ header {
   border: 0;
   border-bottom: 1px solid #dfdfdf;
   padding: 8px 5px;
-  font-family: inherit;
+  font-family: 'Cardo', serif;
   letter-spacing: 2.5px;
   font-size: 12px;
 }
@@ -2287,7 +2270,6 @@ textarea {}
   color: #595959;
   opacity: 0.9;
   cursor: pointer;
-  font-family: 'Cardo', serif;
 }
 
 .owl-controls .owl-nav div:after {
@@ -2530,7 +2512,6 @@ button::-moz-focus-inner {
   color: #FFF;
   font-style: normal;
   font-size: 28px;
-  font-family: Arial, Baskerville, monospace;
 }
 
 .mfp-close:hover,

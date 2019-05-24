@@ -37,7 +37,7 @@ html {
   min-height: 100%; }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'GFS Didot', serif;
   font-size: 14px;
   line-height: 24px;
   color: #3F3F3F;
@@ -103,21 +103,12 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
   font-style: inherit;
   line-height: inherit;
   letter-spacing: inherit;
   text-transform: inherit; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: Helvetica Neue, sans-serif; }
 
 a,
 p a {
@@ -359,7 +350,6 @@ blockquote {
   position: relative; }
 
 .hero_title p {
-  font-family: 'Cardo', serif;
   color: #555;
   font-size: 18px;
   line-height: 28px;
@@ -536,8 +526,7 @@ header {
   letter-spacing: 3px;
   font-weight: 400;
   color: #393939;
-  position: relative;
-  font-family: 'Cardo', serif; }
+  position: relative; }
 
 .menu-nav li.nav_logo {
   margin-top: 20px;
@@ -682,7 +671,6 @@ header {
   transition: none; }
 
 .single_work_header .single_work_title p {
-  font-family: 'Cardo', serif;
   color: #555;
   font-size: 18px;
   line-height: 28px;
@@ -706,7 +694,6 @@ header {
 
 .details_list strong {
   font-weight: 700;
-  font-family: 'Cardo', serif;
   letter-spacing: 1px;
   font-size: 16px;
   padding: 0 5px;
@@ -718,8 +705,7 @@ header {
   text-transform: uppercase;
   font-size: 13px;
   font-weight: 400;
-  letter-spacing: 6px;
-  font-family: 'Cardo', serif; }
+  letter-spacing: 6px; }
 
 .work_nav i {
   padding: 0 4px; }
@@ -883,8 +869,7 @@ header {
   bottom: 0;
   right: 0;
   z-index: 1;
-  width: 80%;
-  font-family: 'Cardo', serif; }
+  width: 80%; }
 
 .work-title h2 {
   font-weight: 700;
@@ -1002,7 +987,6 @@ header {
     margin: auto;
     position: static;
     width: 100%;
-    font-family: 'Cardo', serif;
     text-align: center;
     margin-bottom: 30px; }
   .work-title h2 {
@@ -1110,7 +1094,6 @@ header {
   margin-bottom: 4px;
   text-transform: uppercase;
   position: relative;
-  font-family: 'Raleway', sans-serif;
   font-weight: 700; }
 
 .team-person .team-info .team-role {
@@ -1136,9 +1119,6 @@ header {
   opacity: 0.9;
   filter: alpha(opacity=90);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)"; }
-
-.team-person .overlay .content-wrap h3 {
-  font-family: 'Raleway', sans-serif; }
 
 /*=================================================
 5 - Testimonials
@@ -1466,7 +1446,6 @@ header {
   content: ""; }
 
 .single_post .post_title {
-  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   letter-spacing: 5px;
   text-transform: uppercase;
@@ -1582,7 +1561,6 @@ header {
 .comment-wrap .comment-title,
 .comment-form-warp .comment-title {
   font-size: 17px;
-  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   text-transform: uppercase;
   color: #5d5d5d;
@@ -1666,7 +1644,6 @@ header {
   border: 0;
   border-bottom: 1px solid #dfdfdf;
   padding: 8px 5px;
-  font-family: inherit;
   letter-spacing: 2.5px;
   font-size: 12px; }
 
@@ -1896,8 +1873,7 @@ input[type="submit"] {
 .owl-controls .owl-nav div {
   color: #595959;
   opacity: 0.9;
-  cursor: pointer;
-  font-family: 'Cardo', serif; }
+  cursor: pointer; }
 
 .owl-controls .owl-nav div:after {
   content: '';
@@ -2103,8 +2079,7 @@ button::-moz-focus-inner {
   padding: 0 0 18px 10px;
   color: #FFF;
   font-style: normal;
-  font-size: 28px;
-  font-family: Arial, Baskerville, monospace; }
+  font-size: 28px; }
 
 .mfp-close:hover,
 .mfp-close:focus {
@@ -2427,15 +2402,19 @@ Extra CSS */
 .mb_60 {
   margin-bottom: 60px; }
 
+/* gfs-didot-regular */
 @font-face {
-  font-family: 'HelveticaNeue-BlackCond';
-  src: url("../fonts/HelveticaNeue-BlackCond.eot");
-  src: url("../fonts/HelveticaNeue-BlackCond.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeue-BlackCond.woff") format("woff"), url("../fonts/HelveticaNeue-BlackCond.ttf") format("truetype"), url("../fonts/HelveticaNeue-BlackCond.svg#HelveticaNeue-BlackCond") format("svg"); }
-
-@font-face {
-  font-family: 'HelveticaNeue-Condensed';
-  src: url("../fonts/HelveticaNeue-Condensed.eot");
-  src: url("../fonts/HelveticaNeue-Condensed.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeue-Condensed.woff") format("woff"), url("../fonts/HelveticaNeue-Condensed.ttf") format("truetype"), url("../fonts/HelveticaNeue-Condensed.svg#HelveticaNeue-Condensed") format("svg"); }
+  font-family: 'GFS Didot';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/gfs-didot-v8-greek-regular.eot'); /* IE9 Compat Modes */
+  src: local('GFS Didot Regular'), local('GFSDidot-Regular'),
+       url('../fonts/gfs-didot-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/gfs-didot-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/gfs-didot-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/gfs-didot-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/gfs-didot-regular.svg#GFSDidot') format('svg'); /* Legacy iOS */
+}
 
 #page-wrap, #main-content, #guts {
   min-height: 100%;
@@ -2629,7 +2608,6 @@ header {
 .button {
   font-size: 12px;
   text-transform: uppercase;
-  font-family: 'Raleway', sans-serif;
   float: left;
   min-width: 150px;
   max-width: 250px;
@@ -2837,7 +2815,6 @@ header {
   margin-top: -5px; }
 
 .menu-nav li a {
-  font-family: 'HelveticaNeue-Condensed', sans-serif;
   font-weight: bold;
   font-size: 20px;
   line-height: 1.5;
@@ -3052,43 +3029,44 @@ header {
     max-width: 240px;
     margin: 0 auto; }
   .background-image-container--joy {
-    background-image: url("/images/joy-logo-colour.png");
+    background-image: url("../images/joy-logo-colour.png");
     background-size: 155px 149px; }
   .background-image-container--bea {
     background-image: url("../images/bea-logo.png"); }
   .background-image-container--secretSpa {
-    background-image: url("/images/secret-spa-logo.jpg"); }
+    background-image: url("../images/secret-spa-logo.jpg"); }
     .background-image-container--secretSpa p {
       font-size: 32px;
       color: #404040;
       letter-spacing: 2px;
-      font-family: Raleway,Gill Sans,Lato;
       text-align: center; }
   .background-image-container--kold {
     background-image: url("../images/kold-logo.png"); }
   .background-image-container--ltc {
-    background-image: url("/images/londonteacompany.png"); }
+    background-image: url("../images/londonteacompany.png"); }
   .background-image-container--tokyo {
-    background-image: url("/images/tokyojames.png"); }
+    background-image: url("../images/tokyojames.png"); }
   .background-image-container--gozel {
-    background-image: url("/images/gozel-green.png"); }
+    background-image: url("../images/gozel-green.png"); }
   .background-image-container--maisondefleurs {
     background-image: url("../images/maisondefleurs.png"); }
   .background-image-container--percol_coffee {
-    background-image: url("/images/percol_coffee.png"); }
+    background-image: url("../images/percol_coffee.png"); }
   .background-image-container--alexandra_de_curtis {
-    background-image: url("/images/alexandra_de_curtis.png"); }
+    background-image: url("../images/alexandra_de_curtis.png"); }
   .background-image-container--thea {
     background-image: url("../images/thea.jpg"); }
   .background-image-container--stay_sunny_chicago {
-    background-image: url("/images/stay_sunny_chicago.png"); }
+    background-image: url("../images/stay_sunny_chicago.png"); }
   .background-image-container--zeadora {
     background-image: url("../images/zeadora.png"); }
   .background-image-container--threefloor {
-    background-image: url("/images/threefloor.png"); }
+    background-image: url("../images/threefloor.png"); }
   .background-image-container--slashedbytia {
-    background-image: url("/images/slashedbytia.png"); }
-
+    background-image: url("../images/slashedbytia.png"); }
+  .background-image-container--collinistudio {
+      background-image: url("../images/collinistudio.png"); }
+    
 @media only screen and (max-width: 1050px) {
   .clients-box-container {
     padding: 100px 0px; }

@@ -503,7 +503,7 @@ header {
   width: 100%;
   height: 100%;
   z-index: 999;
-  border: solid 50px #f1f1f1;
+  border: solid 50px black;
   display: none; }
 
 .menu-content-wrap {
@@ -2642,7 +2642,7 @@ header {
   position: relative;
   display: inline-block;
   width: 180px;
-  height: auto;
+  height: 100%;
   margin: 5px; }
 
 #rudr_instafeed li img {
@@ -2786,6 +2786,10 @@ header {
     -moz-transform: rotateZ(0deg);
     -o-transform: rotateZ(0deg);
     -ms-transform: rotateZ(0deg); }
+
+.activeMenu {
+  top: 50px;
+  right: 50px !important; }
 
 .activeMenu li:nth-child(1) {
   transform: rotateZ(45deg);
@@ -3066,6 +3070,14 @@ header {
     background-image: url("../images/slashedbytia.png"); }
   .background-image-container--collinistudio {
       background-image: url("../images/collinistudio.png"); }
+  .background-image-container--fendi {
+    background-image: url("../images/fendi.png"); }
+  .background-image-container--qasimi {
+    background-image: url("../images/qasimi.png"); }
+  .background-image-container--bang-olufsen {
+    background-image: url("../images/bang-olufsen.png"); }
+  .background-image-container--huawei {
+      background-image: url("../images/huawei.png"); }
     
 @media only screen and (max-width: 1050px) {
   .clients-box-container {

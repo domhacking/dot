@@ -1,13 +1,13 @@
-/* gfs-didot-regular */
+/* HelveticaNeue */
 @font-face {
-  font-family: 'GFS Didot';
+  font-family: 'HelveticaNeue';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/gfs-didot-v8-greek-regular.eot'); /* IE9 Compat Modes */
-  src: local('GFS Didot Regular'), local('GFSDidot-Regular'),
-       url('../fonts/gfs-didot-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/gfs-didot-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/gfs-didot-regular.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/gfs-didot-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/gfs-didot-regular.svg#GFSDidot') format('svg'); /* Legacy iOS */
+  src: url('../fonts/HelveticaNeue-Condensed.eot'); /* IE9 Compat Modes */
+  src: local('HelveticaNeue'), local('HelveticaNeue'),
+       url('../fonts/HelveticaNeue-Condensed.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/HelveticaNeue-Condensed.woff') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/HelveticaNeue-Condensed.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/HelveticaNeue-Condensed.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/HelveticaNeue-Condensed.svg') format('svg'); /* Legacy iOS */
 }

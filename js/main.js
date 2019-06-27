@@ -207,7 +207,6 @@
     --------------------------------------------- */
 
     $(window).scroll(function() {
-        console.log('hello');
         var whiteheader = document.querySelector('.whiteheaderTransparent');
         var footer = document.querySelector('.footerTransparent');
         var arrow = document.querySelector('.arrow');
